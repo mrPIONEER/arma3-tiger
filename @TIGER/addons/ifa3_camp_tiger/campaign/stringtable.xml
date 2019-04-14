@@ -1,0 +1,639 @@
+﻿<Project name="Project_IFA3_Tiger">
+<Package name="Package_IFA3_Tiger">
+
+<Container name="Opisanie_campanii">
+
+<Key ID="STR_CAMP_ifa3_tiger">
+<Russian>ТИГР</Russian>
+<Original>TIGER</Original>
+</Key>  
+<Key ID="STR_avtor_ifa3_tiger">
+<Russian>[IMB] PIONEER</Russian>
+<Original>[IMB] PIONEER</Original>
+</Key>
+<Key ID="STR_text_ifa3_tiger">
+<Russian>1944 год, июнь.&lt;br/&gt;
+Крупнейшая в истории десантная операция "Оверлорд" прошла успешно. Американские, английские и канадские войска, поддержанные тремя воздушно-десантными дивизиями, под ураганным огнем противника высадились в Нормандии. Сломив ожесточенное сопротивление германских войск, они преодолели прибрежную полосу и ведут тяжелые бои с целью прорыва неприятельской обороны и выхода на оперативный простор.&lt;br/&gt;
+В то время как американская армия под началом генерала Брэдли продвигается к порту Шербур, англичане и канадцы генерала Монтгомери вышли на подступы к Кану – узловому пункту немецкой обороны, запирающему дорогу на Париж. Вечером 12 июня 7-я бронетанковая дивизия англичан изготовилась к броску на городок Вильер-Бокаж. Это – легкая добыча. Населенный пункт обороняется горсткой немецких солдат без тяжелого оружия. Пройдя через Вильер-Бокаж, английские бронированные полчища смогут днем 13 июня беспрепятственно атаковать Кан с открытого южного фланга. Захват Кана позволит англичанам в считанные дни выйти на подступы к Парижу и решить судьбу германских армий во Франции.&lt;br/&gt;
+Британской армаде противостоит лишь несколько танков из 2-й роты 501-го батальона 1-го танкового корпуса СС. Командует ротой оберштурмфюрер СС Михаэль Виттман. Сегодня на него молятся не только защитники Кана, но и немецкие солдаты всех родов войск от Сен-Назера до Парижа.
+</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_mis1">
+<Russian>Первый контакт</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_coop">
+<Russian>Кампания ТИГР: 1 миссия - Первый контакт</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_text">
+<Russian>Описание 1</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2">
+<Russian>Охотник</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_coop">
+<Russian>Кампания ТИГР: 2 миссия - Охотник</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_text">
+<Russian>Описание 2</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis3_coop">
+<Russian>Вильер-Бокаж</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1">
+<Russian>Кампания ТИГР: 3 миссия - Вильер-Бокаж</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis3_text">
+<Russian>Описание 3</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4">
+<Russian>Прорыв</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_coop">
+<Russian>Кампания ТИГР: 4 миссия - Вильер-Бокаж</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_text">
+<Russian>Описание 4</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5">
+<Russian>Ярость Тигра</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_coop">
+<Russian>Кампания ТИГР: 5 миссия - Ярость Тигра</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_text">
+<Russian>Описание 5</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_lobby">
+<Russian>Слот командира обязателен. Запрещено отключать ИИ. Запрещено подключаться к текущей игре (JIP).</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_end1">
+<Russian>Миссия пройдена!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_kill_player">
+<Russian>Один из игроков умер...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_loser_jip">
+<Russian>Нельзя заходить во время игры</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_kill_tiger">
+<Russian>Позор, ТИГР уничтожен...</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+<Container name="PERS">
+
+<Key ID="STR_ifa3_tiger_s1">
+<Russian>Михаэль Виттман (командир)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_s2">
+<Russian>Гаспар Колль (наводчик)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_s3">
+<Russian>Вальтер Хенке (водитель)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_s4">
+<Russian>Ульрих Расснер (заряжающий)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_s5">
+<Russian>Гюнтер Иррганг (радист)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_of">
+<Russian>Офицер</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_solder">
+<Russian>Солдат</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_radio_st1">
+<Russian>Стрекоза-1</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_radio_st2">
+<Russian>Стрекоза-2</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_radio_st3">
+<Russian>Стрекоза-3</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+
+<Container name="TASK_1_MIS">
+
+<Key ID="STR_ifa3_tiger_1_mis_task1">
+<Russian>Выдвинуться в Вильер-Бокаж</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task1_des">
+<Russian>Вашей роте необходимо выдвинуться в Вильер-Бокаж и перекрыть дорогу к Кан.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task2">
+<Russian>Уничтожить БТР с рацией</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task2_des">
+<Russian>Необходимо уничтожить вражеский БТР с радиостанцией, иначе наши танки уничтожит вражеская авиация. БТР где-то в городе.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task3">
+<Russian>Отбейте мост (восточную часть)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task3_des">
+<Russian>Займите восточную часть города.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task4">
+<Russian>Отбейте мост (западную часть)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task4_des">
+<Russian>Займите западную часть города.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task5">
+<Russian>Вернитесь к танкам</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_task5_des">
+<Russian>Отлично! А теперь вернитесь к танками и продолжите свой путь к Вильер-Бокаж.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_plan1">
+<Russian>Ситуация</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_plan1_1">
+<Russian>Михаэль Виттман знал, что его "Тигр" – лучший танк в мире. И знал он это не из речей доктора Йозефа Геббельса. Виттмана убедили в этом жестокие танковые побоища под Курском и на Правобережной Украине, когда юркие Т-34 с жестоким упрямством бросались на германских бронированных хищников. Но даже самый лучший танк и самые опытные танкисты не в состоянии вечно сдерживать натиск превосходящих сил противника. Этому Виттмана тоже научил Восточный фронт.&lt;br/&gt;&lt;br/&gt;
+Авиация союзников безраздельно господствовала в небе Нормандии. Появлению истребителей-бомбардировщиков "Тандерболты", вооруженных мощными бронебойными ракетами HVAR, противопоставить было нечего. Танки Третьего Рейха, лишенные защиты истребителей люфтваффе, из первоклассных орудий войны превратились в Нормандии в самоходные бронированные могилы.&lt;br/&gt;&lt;br/&gt;
+Задачу, поставленную перед своей ротой, Виттман считал трижды невыполнимой. "Тандерболты", "базуки" и "Шерманы", воюющие по правилу "всемером на одного", не оставляли ни малейших шансов на успех. Идя в бой, Виттман и его танкисты приготовились встретить смерть. Их беспокоило лишь одно: будет ли эта смерть быстрой и нелепой или же в память о себе они воздвигнут дымящиеся курганы английской брони...
+</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_hint1">
+<Russian>Вы можете пропустить диалог через меню действий.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_hint2">
+<Russian>Уничтожить рацию и отбейте мост</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_starttext">
+<Russian>Первый Контакт&lt;br/&gt;Дорога к Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_action1">
+<Russian>ПРОПУСТИТЬ ДИАЛОГ</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_1_mis_action2">
+<Russian>ВЗЯТЬ КАРТУ</Russian>
+<Original></Original>
+</Key>
+</Container>
+
+
+<Container name="TASK_2_MIS">
+
+<Key ID="STR_ifa3_tiger_2_mis_task0">
+<Russian>Тигр должен остаться целым</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task0_des">
+<Russian>Уничтожение Тигра недопустимо!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task1">
+<Russian>Узнать обстановку у панцергренадеров</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task1_des">
+<Russian>Дорога на Кан перекрыта, необходимо узнать обстановку у панцергренадеров.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task2">
+<Russian>Организовать засаду</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task2_des">
+<Russian>У вас есть немного времени. Вместе панцергренадерами организуйте засаду на вражескую танковою колону.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task3">
+<Russian>Уничтожить танковою колону</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task3_des">
+<Russian>Колона скоро будет здесь! О передвижении танков докладывают панцергренадеры.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task4">
+<Russian>Найти и уничтожить миномёты</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_task4_des">
+<Russian>Томмии разместили миномёты на севере, найдите и уничтожте их!</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_2_mis_plan1">
+<Russian>Ситуация</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_plan1_1">
+<Russian>Пока что танкистам сопутствовала удача. Им удалось обвести вокруг пальца британских пилотов и расправиться с выскочками из 1-й воздушно-десантной дивизии. На дворе стояло трагическое лето 1944 и даже отчаянным сорвиголовам из мотопехоты этих подвигов хватило бы для того, чтобы получить трехдневный отпуск в Париж. Однако, Виттман и его люди носили в своих петлицах руны СС и были воспитаны самим Йозефом "Зеппом" Дитрихом. Они и слышать не хотели об отпуске. День только начинался и танкисты помнили, что работы у них – непочатый край. Вильер-Бокаж еще не показался, но каждый из людей Виттмана предчувствовал: машины противника появятся с минуты на минуту.</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_2_mis_hint1">
+<Russian>Садитесь в свой танк №200</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_hint2">
+<Russian>Садитесь в танк №222</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_2_mis_starttext">
+<Russian>Охотник&lt;br/&gt;Окресности Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+
+<Container name="SAY_1_MIS">
+
+<Key ID="STR_ifa3_tiger_mis1_say1">
+<Russian>Внимание, воздух!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say2">
+<Russian>Сколько?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say3">
+<Russian>Один! Похоже, разведчик!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say4">
+<Russian>Сдается мне, это лишь первый вестник бури.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say5">
+<Russian>Может, на этот раз пронесет?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say6">
+<Russian>Ты полагаешь, если нас атаковали с воздуха три раза за последние четыре дня, то сегодня у чертовых томми закончились ракеты?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say7">
+<Russian>Довольно болтовни!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say8">
+<Russian>"Стрекоза", внимание! "Стрекоза", внимание! Немедленно рассредоточиться! Ищем подходящие укрытия и прячем наших малышей! Прячем как следует, "Тандерболты" на подходе!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say9">
+<Russian>Господин оберштурмфюрер! Циркулярное сообщение на частоте батальона!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say10">
+<Russian>Неужели они так далеко, что были вынуждены перейти на морзянку?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say11">
+<Russian>Тихо, не мешай Гюнтеру!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say12">
+<Russian>Всем... английские... парашютисты... оседлали... мост... на дороге... Канн – Вильер-Бокаж...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say13">
+<Russian>Ч-черт! Они вконец обнаглели!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say14">
+<Russian>Давайте раздавим их! Это будет неплохая утренняя разминка!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say15">
+<Russian>Ты можешь гарантировать, что с полутора километров разнесешь их радиостанцию первым снарядом?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say16">
+<Russian>Гарантированно – только третьим.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say17">
+<Russian>Таким образом, у томми будет не менее четырнадцати секунд на то, чтобы связаться со своими ВВС. В этом случае неплохую утреннюю разминку устроят себе "Тандерболты"...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say17_1">
+<Russian>Признаться, я не успел по ним соскучиться!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say18">
+<Russian>Я тоже... И что ты предлагаешь, Михаэль?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say19">
+<Russian>Два варианта. Первый: связаться со штабом дивизии, объяснить обстановку и попросить помощи у панцергренадеров. Если они соизволят войти в наше положение, к вечеру у нас появятся шансы продолжить прогулку на Вильер-Бокаж...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say20">
+<Russian>Как-то кисло... А второй?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say21">
+<Russian>Второй. Мы оставим нашего зверя на попечение пройдох унтершарфюрера Кнабе и вычистим мост сами. Как говорят по ту сторону Дуврского канала, "если хочешь, чтобы что-то было сделано хорошо, сделай это сам"... Какой из двух вариантов мы выбираем?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say22">
+<Russian>Я за второй.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say23">
+<Russian>Я за, если мне разрешат снять с танка мой любимый МГ-34.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say24">
+<Russian>Эх, пойду на поводу у коллектива!..</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say25">
+<Russian>А ты, Гаспар?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis1_say26">
+<Russian>Ты же знаешь, мне никогда не нравились твои авантюры. Но всегда нравилось то, к чему они приводят!</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+<Container name="SAY_2_MIS">
+
+<Key ID="STR_ifa3_tiger_mis2_say1">
+<Russian>Сержант Грюн, двести второй пехотный батальон, герр оберштурмфюрер!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say2">
+<Russian>В чем дело, сержант?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say3">
+<Russian>В Вильер-Бокаже английские танки, герр оберштурмфюрер! Передовая рота уже вышла на дорогу!
+Оберштурмфюрер Виттман: Сколько у них танков?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say4">
+<Russian>Я насчитал восемь. Но, уверен, в Вильер-Бокаже их гораздо больше! Они сметут нас, герр оберштурмфюрер! Сдуют, как пылинку с рукава!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say5">
+<Russian>Без паники! Уверяю вас, сержант, мои танки не так-то легко сдуть...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say6">
+<Russian>Храни вас Господь, герр оберштурмфюрер! Разрешите вернуться на позицию?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say7">
+<Russian>Ступайте, сержант. И передайте своим: еще до захода солнца Вильер-Бокаж будет нашим!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say8">
+<Russian>Заводи!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say9">
+<Russian>Химмельдоннерветтер! Встал, как вкопанный! Можете отдать меня под трибунал, но я не понимаю, что произошло с двигателем! Этот "Майбах" работал как часы от самого Парижа!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say10">
+<Russian>Проклятье! Мы не можем терять ни секунды!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say11">
+<Russian>"Стрекоза-2", вы меня слышите?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say12">
+<Russian>Слышу хорошо! Что стряслось, герр Виттман?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say13">
+<Russian>Мы заглохли! И это значит, дружище, что тебе не повезло...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say14">
+<Russian>Что вы имеете в виду, герр Виттман?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say15">
+<Russian>Мы должны поменяться машинами. Ты со своими парнями займешься моим "Тигром", а мы на твоем прокатимся, пощекочем англичан.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say16">
+<Russian>В эфире "Стрекоза-3"! Помощь нужна?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say17">
+<Russian>Да, выдвигайтесь с панцергренадерами к дороге, организуем засаду.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say18">
+<Russian>Есть, понял.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis2_say19">
+<Russian>Все, парни. Пора сменить эту душную коробку на другую...</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+<Container name="SAY_3_MIS">
+
+<Key ID="STR_ifa3_tiger_mis3_say1">
+<Russian>Дьявол мне в бок, но мы снова сломались!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis3_say2">
+<Russian>Ты уверен, Вальтер?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis3_say3">
+<Russian>Так же как и в том, что мы лучшие солдаты фюрера!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis3_say4">
+<Russian>Как думаешь, поломка серьезная?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis3_say5">
+<Russian>Я плохо чувствую чужую машину... Но думаю, гаечным ключом и молитвой тут не обойдешься! Краусс еще вчера говорил, что бензонасос у него работает на последнем издыхании... Подозреваю, и впрямь издох...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis3_say6">
+<Russian>Конечно, за такое Зепп нас по головке не погладит... Но машину придется оставить. Выходить к своим будем с боем. Поэтому снимаем пулеметы – и вперед на четырех, как чертовы панцергренадеры!</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+<Container name="SAY_4_MIS">
+
+<Key ID="STR_ifa3_tiger_mis4_say1">
+<Russian>Герр группенфюрер! Разрешите доложить обстановку!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say2">
+<Russian>Отбросим формальности, Михаэль... О вашем бое за Вильер-Бокаж не слышали разве что неграмотные галицийские крестьяне...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say3">
+<Russian>Но откуда? Ведь не прошло и трех часов!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say4">
+<Russian>Ваш друг Кнабе наблюдал в бинокль за вашим блистательным фортиссимо на въезде в Вильер-Бокаж. Также Кнабе отбил нам ключом, что ваш "Тигр" въехал в городок и исчез из поля зрения. Скажу откровенно, я уже начал беспокоиться, ведь, стоило вам ворваться в Вильер-Бокаж, вы исчезли не только из поля зрения, но и из эфира. Это тоже сообщил Кнабе.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say5">
+<Russian>Мы и впрямь были на волосок от гибели, герр группенфюрер! Зато мы записали на свой боевой счет весь штаб четвертого полка Лондонских Стрелков! Кстати, Вильер-Бокаж, надеюсь, уже взят нашими гренадерами?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say6">
+<Russian> К сожалению, гренадеры не успели воспользоваться плодами вашей атаки. Мотопехота седьмой бронетанковой дивизии просочилась в город и быстро окопалась на его окраинах.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say7">
+<Russian>Им должно быть стыдно.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say8">
+<Russian>Мы должны быть снисходительны к ним, Михаэль... Гренадеры нечеловечески изнурены многодневными бомбежками, они нуждаются в отдыхе.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say9">
+<Russian>Бог им судья!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say10">
+<Russian>Я считаю, что и вам, Михаэль, не мешало бы отдохнуть.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say11">
+<Russian>Я не вложу свой меч в ножны, пока Вильер-Бокаж снова не станет нашим. Прошу вас выделить мне любой исправный танк и благословить мой экипаж на доброе дело.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say12">
+<Russian>Дорогой мой Михаэль! Если бы в моем распоряжении остался хотя бы один исправный танк, я отрядил бы его вам на помощь сразу после донесения Кнабе!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say13">
+<Russian>Что ж, мои худшие ожидания сбылись... В таком случае, дайте мне хотя бы один целый бензонасос для "Майбаха" и грузовик на ходу.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say14">
+<Russian>Вы намерены пойти в бой на грузовике?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say15">
+<Russian>Нет, я лишь доеду на нем до своего командирского "Тигра", над которым сейчас колдует старина Краусс, механик-водитель Кнабе... Держу пари, мой танк уже на ходу!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say16">
+<Russian>Я не теряю надежды починить и второй танк, брошенный в Вильер-Бокаже!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis4_say17">
+<Russian>Скромности вам не занимать, дорогой мой Михаэль... Что ж, вы получите все, о чем попросили... </Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+<Container name="SAY_5_MIS">
+
+<Key ID="STR_ifa3_tiger_mis5_say1">
+<Russian>А вот и наш малыш!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say2">
+<Russian>Выглядит как новенький!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say3">
+<Russian>Никто его не украл!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say4">
+<Russian>Надеюсь, что никто и не заминировал...</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say5">
+<Russian>Расснер прав. Нужно быть предельно осторожными при открытии люков.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say6">
+<Russian>Итак, действуем следующим образом: Хенке и Колль устанавливают бензонасос и принимают танк под свое командование. Мы втроем остаемся под броней и прикрываем их, пока они работают. А затем мы вычищаем городишко. Игра в четыре гусеницы, господа! Есть возражения?</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say7">
+<Russian>Возражений нет. Есть дополнение: в Вильер-Бокаже – отменные винные погребки. Я хотел бы прибавить к твоему плану, Михаэль, добрую дружескую попойку. Разумеется, после того, как дело будет сделано!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say8">
+<Russian>Да-да, я слышал, до прошлой недели здешний сидр гоняли "Тетушкой Ю" прямиком в Каринхалле, к столу самого рейхсмаршала!</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_mis5_say9">
+<Russian>Всегда ненавидел сидр! Но если таким будет вкус нашей победы, клянусь, я согласен пить его до гробовой доски!</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+
+</Package>
+</Project>

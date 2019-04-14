@@ -1,0 +1,13 @@
+name = "Campaign TIGER";
+picture = "logo.jpg";
+actionName = "Website";
+action = "https://imbrigade.ru/";
+logo = "logo.jpg";
+logoOver = "logo.jpg";
+tooltip = "Campaign TIGER";
+tooltipOwned = "Campaign TIGER";
+overview = "";
+author = "[IMB] PIONEER";
+overviewPicture = "logo.jpg";
+overviewText = "Campaign TIGER";
+overviewFootnote = "";

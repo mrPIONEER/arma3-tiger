@@ -1,0 +1,93 @@
+﻿class Campaign
+{
+	name =  "$STR_CAMP_ifa3_tiger";
+	firstBattle = Intro;
+	weaponPool = 1;
+	briefingName = "$STR_CAMP_ifa3_tiger";
+	author = "$STR_avtor_ifa3_tiger";
+	overviewPicture = "\ifa3_camp_tiger\t\screan.jpg";
+	overviewText = "$STR_text_ifa3_tiger";
+	
+class MissionDefault
+{
+ 	lives = -1;
+
+	lost = ;
+	end1 = ;
+	end2 = ;
+	end3 = ;
+	end4 = ;
+	end5 = ;
+	end6 = ;
+};
+	  class Intro
+	
+        {
+		name = "STR_CAMP_ifa3_tiger"; 
+		cutscene =;
+		firstMission = ifa3_camp_tiger_1mis;
+		end1 = ;
+		end2 = ;
+		end3 = ;
+		end4 = ;
+		end5 = ;
+		end6 = ;
+		lost = ;
+
+        class ifa3_camp_tiger_1mis: MissionDefault
+		{
+		briefingName = "$STR_ifa3_tiger_mis1";
+		author = "$STR_avtor_ifa3_tiger";
+		overviewPicture = "\ifa3_camp_tiger\t\1.jpg";
+		overviewText = "$STR_ifa3_tiger_mis1_text";	
+		end1 = ifa3_camp_tiger_2mis;
+		lost = ifa3_tiger_mis_1.I44_Merderet_V3;
+		template = ifa3_tiger_mis_1.I44_Merderet_V3;
+		};
+		
+		class ifa3_camp_tiger_2mis: MissionDefault
+		{
+		briefingName = "$STR_ifa3_tiger_mis2";
+		author = "$STR_avtor_ifa3_tiger";
+		overviewPicture = "\ifa3_camp_tiger\t\2.jpg";
+		overviewText = "$STR_ifa3_tiger_mis2_text";	
+		end1 = ifa3_camp_tiger_3mis;
+		lost = ifa3_camp_tiger_2mis;
+		template = ifa3_camp_tiger_2mis.MCN_Neaville;
+		};
+		
+        class ifa3_camp_tiger_3mis: MissionDefault
+		{
+		briefingName = "$STR_ifa3_tiger_mis3";
+		author = "$STR_avtor_ifa3_tiger";
+		overviewPicture = "\ifa3_camp_tiger\t\3.jpg";
+		overviewText = "$STR_ifa3_tiger_mis3_text";	
+		end1 = ifa3_camp_tiger_4mis;
+		lost = ifa3_camp_tiger_3mis;
+		template = ifa3_camp_tiger_3mis.MCN_Neaville;
+		};
+
+        class ifa3_camp_tiger_4mis: MissionDefault
+		{
+		briefingName = "$STR_ifa3_tiger_mis4";
+		author = "$STR_avtor_ifa3_tiger";
+		overviewPicture = "\ifa3_camp_tiger\t\4.jpg";
+		overviewText = "STR_ifa3_tiger_mis4_text";	
+		end1 = ifa3_camp_tiger_5mis;
+		lost = ifa3_camp_tiger_4mis;
+		template = ifa3_camp_tiger_4mis.MCN_Neaville;
+		};
+		
+        class ifa3_camp_tiger_5mis: MissionDefault
+		{
+		briefingName = "$STR_ifa3_tiger_mis5";
+		author = "$STR_avtor_ifa3_tiger";
+		overviewPicture = "\ifa3_camp_tiger\t\5.jpg";
+		overviewText = "STR_ifa3_tiger_mis5_text";	
+		end1 = "";
+		lost = ifa3_camp_tiger_5mis;
+		template = ifa3_camp_tiger_5mis.MCN_Neaville;
+		};
+		
+	};
+};

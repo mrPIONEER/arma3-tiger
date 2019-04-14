@@ -1,0 +1,96 @@
+class Sentences
+{
+
+#define TEXT(I) \
+class STR_ifa3_tiger_##I \
+{ \
+text = $STR_ifa3_tiger_##I##; \
+speech[] = {\ifa3_camp_tiger\s\STR_ifa3_tiger_##I.ogg}; \
+class Arguments {}; \
+};
+
+TEXT(mis1_say1)
+TEXT(mis1_say2)
+TEXT(mis1_say3)
+TEXT(mis1_say4)
+TEXT(mis1_say5)
+TEXT(mis1_say6)
+TEXT(mis1_say7)
+TEXT(mis1_say8)
+TEXT(mis1_say9)
+TEXT(mis1_say10)
+TEXT(mis1_say11)
+TEXT(mis1_say12)
+TEXT(mis1_say13)
+TEXT(mis1_say14)
+TEXT(mis1_say15)
+TEXT(mis1_say16)
+TEXT(mis1_say17)
+TEXT(mis1_say17_1)
+TEXT(mis1_say18)
+TEXT(mis1_say19)
+TEXT(mis1_say20)
+TEXT(mis1_say21)
+TEXT(mis1_say22)
+TEXT(mis1_say23)
+TEXT(mis1_say24)
+TEXT(mis1_say25)
+TEXT(mis1_say26)
+TEXT(mis2_say1)
+TEXT(mis2_say2)
+TEXT(mis2_say3)
+TEXT(mis2_say4)
+TEXT(mis2_say5)
+TEXT(mis2_say6)
+TEXT(mis2_say7)
+TEXT(mis2_say8)
+TEXT(mis2_say9)
+TEXT(mis2_say10)
+TEXT(mis2_say11)
+TEXT(mis2_say12)
+TEXT(mis2_say13)
+TEXT(mis2_say14)
+TEXT(mis2_say15)
+TEXT(mis2_say16)
+TEXT(mis2_say17)
+TEXT(mis2_say18)
+TEXT(mis2_say19)
+TEXT(mis3_say1)
+TEXT(mis3_say2)
+TEXT(mis3_say3)
+TEXT(mis3_say4)
+TEXT(mis3_say5)
+TEXT(mis3_say6)
+TEXT(mis4_say1)
+TEXT(mis4_say2)
+TEXT(mis4_say3)
+TEXT(mis4_say4)
+TEXT(mis4_say5)
+TEXT(mis4_say6)
+TEXT(mis4_say7)
+TEXT(mis4_say8)
+TEXT(mis4_say9)
+TEXT(mis4_say10)
+TEXT(mis4_say11)
+TEXT(mis4_say12)
+TEXT(mis4_say13)
+TEXT(mis4_say14)
+TEXT(mis4_say15)
+TEXT(mis4_say16)
+TEXT(mis4_say17)
+TEXT(mis5_say1)
+TEXT(mis5_say2)
+TEXT(mis5_say3)
+TEXT(mis5_say4)
+TEXT(mis5_say5)
+TEXT(mis5_say6)
+TEXT(mis5_say7)
+TEXT(mis5_say8)
+TEXT(mis5_say9)
+};
+
+
+class Arguments{};
+class Special{};
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university}; 
