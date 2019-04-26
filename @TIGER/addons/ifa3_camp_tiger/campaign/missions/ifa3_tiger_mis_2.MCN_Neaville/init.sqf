@@ -41,7 +41,7 @@ tanki_brit_kolona=[kolona_tank_1,kolona_tank_2,kolona_tank_3,kolona_tank_4,kolon
 {_x moveincargo kolona_tank_8} foreach units  kolona_peh_8;
 {_x moveincargo kolona_tank_9} foreach units  kolona_peh_9;
 
-{_x call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s2.sqf";} foreach [t1_1,t2_1];
+{_x call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s1.sqf";} foreach [t1_1,t2_1];
 {_x call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s2.sqf";} foreach [t1_2,t1_3,t1_4,t1_5,t2_2,t2_3,t2_4,t2_5];
 
 // Перевооружение в MP в SP загрузка с прошлой миссии
@@ -419,11 +419,11 @@ Task4 setTaskState "SUCCEEDED";
 
 // Сохраняем статус солдат для SP для миссии 2 
 if (!isMultiplayer) then {
-s1 saveStatus "ifa3_camp_tiger_1_mis_s1";
-s2 saveStatus "ifa3_camp_tiger_1_mis_s2";
-s3 saveStatus "ifa3_camp_tiger_1_mis_s3";
-s4 saveStatus "ifa3_camp_tiger_1_mis_s4";
-s5 saveStatus "ifa3_camp_tiger_1_mis_s5";
+s1 saveStatus "ifa3_camp_tiger_2_mis_s1";
+s2 saveStatus "ifa3_camp_tiger_2_mis_s2";
+s3 saveStatus "ifa3_camp_tiger_2_mis_s3";
+s4 saveStatus "ifa3_camp_tiger_2_mis_s4";
+s5 saveStatus "ifa3_camp_tiger_2_mis_s5";
 };
 
 // Конец

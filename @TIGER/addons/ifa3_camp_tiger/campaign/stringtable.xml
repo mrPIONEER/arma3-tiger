@@ -15,8 +15,7 @@
 <Russian>1944 год, июнь.&lt;br/&gt;
 Крупнейшая в истории десантная операция "Оверлорд" прошла успешно. Американские, английские и канадские войска, поддержанные тремя воздушно-десантными дивизиями, под ураганным огнем противника высадились в Нормандии. Сломив ожесточенное сопротивление германских войск, они преодолели прибрежную полосу и ведут тяжелые бои с целью прорыва неприятельской обороны и выхода на оперативный простор.&lt;br/&gt;
 В то время как американская армия под началом генерала Брэдли продвигается к порту Шербур, англичане и канадцы генерала Монтгомери вышли на подступы к Кану – узловому пункту немецкой обороны, запирающему дорогу на Париж. Вечером 12 июня 7-я бронетанковая дивизия англичан изготовилась к броску на городок Вильер-Бокаж. Это – легкая добыча. Населенный пункт обороняется горсткой немецких солдат без тяжелого оружия. Пройдя через Вильер-Бокаж, английские бронированные полчища смогут днем 13 июня беспрепятственно атаковать Кан с открытого южного фланга. Захват Кана позволит англичанам в считанные дни выйти на подступы к Парижу и решить судьбу германских армий во Франции.&lt;br/&gt;
-Британской армаде противостоит лишь несколько танков из 2-й роты 501-го батальона 1-го танкового корпуса СС. Командует ротой оберштурмфюрер СС Михаэль Виттман. Сегодня на него молятся не только защитники Кана, но и немецкие солдаты всех родов войск от Сен-Назера до Парижа.
-</Russian>
+Британской армаде противостоит лишь несколько танков из 2-й роты 501-го батальона 1-го танкового корпуса СС. Командует ротой оберштурмфюрер СС Михаэль Виттман. Сегодня на него молятся не только защитники Кана, но и немецкие солдаты всех родов войск от Сен-Назера до Парижа.</Russian>
 <Original></Original>
 </Key>
 
@@ -44,11 +43,11 @@
 <Russian>Описание 2</Russian>
 <Original></Original>
 </Key>
-<Key ID="STR_ifa3_tiger_mis3_coop">
+<Key ID="STR_ifa3_tiger_mis3">
 <Russian>Вильер-Бокаж</Russian>
 <Original></Original>
 </Key>
-<Key ID="STR_ifa3_tiger_mis1">
+<Key ID="STR_ifa3_tiger_mis3_coop">
 <Russian>Кампания ТИГР: 3 миссия - Вильер-Бокаж</Russian>
 <Original></Original>
 </Key>
@@ -57,29 +56,18 @@
 <Original></Original>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4">
-<Russian>Прорыв</Russian>
+<Russian>Ярость Тигра</Russian>
 <Original></Original>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4_coop">
-<Russian>Кампания ТИГР: 4 миссия - Вильер-Бокаж</Russian>
+<Russian>Кампания ТИГР: 4 миссия - Ярость Тигра</Russian>
 <Original></Original>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4_text">
 <Russian>Описание 4</Russian>
 <Original></Original>
 </Key>
-<Key ID="STR_ifa3_tiger_mis5">
-<Russian>Ярость Тигра</Russian>
-<Original></Original>
-</Key>
-<Key ID="STR_ifa3_tiger_mis5_coop">
-<Russian>Кампания ТИГР: 5 миссия - Ярость Тигра</Russian>
-<Original></Original>
-</Key>
-<Key ID="STR_ifa3_tiger_mis5_text">
-<Russian>Описание 5</Russian>
-<Original></Original>
-</Key>
+
 
 <Key ID="STR_ifa3_tiger_lobby">
 <Russian>Слот командира обязателен. Запрещено отключать ИИ. Запрещено подключаться к текущей игре (JIP).</Russian>
@@ -226,7 +214,6 @@
 </Key>
 </Container>
 
-
 <Container name="TASK_2_MIS">
 
 <Key ID="STR_ifa3_tiger_2_mis_task0">
@@ -294,6 +281,110 @@
 </Key>
 
 </Container>
+
+<Container name="TASK_3_MIS">
+
+<Key ID="STR_ifa3_tiger_3_mis_task1">
+<Russian>Найти и уничтожить офицерские танки</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_3_mis_task1_des">
+<Russian>Прорваться в Вильер-Бокаж, обнаружить и уничтожить штабные танки (Шерман Fireflya) 4-го полка Лондонских Стрелков 7-ой бронетанковой дивизии.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_3_mis_task2">
+<Russian>Отступить</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_3_mis_task2_des">
+<Russian>Танк сломался, покидайте машину и отступайте.</Russian>
+<Original></Original>
+</Key>
+
+
+<Key ID="STR_ifa3_tiger_3_mis_plan1">
+<Russian>Ситуация</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_3_mis_plan1_1">
+<Russian>Вихрь боя захватил Виттмана. Он не ожидал, что громыхающая колонна английской танковой элиты, "Крыс Пустыни", станет беспомощной добычей одного-единственного разъяренного "Тигра". Там, на дороге, Виттман почувствовал: переменчивая фортуна повернулась лицом к сынам Рейха. Нужно использовать каждую секунду ее расположения!
+&lt;br/&gt;&lt;br/&gt;
+Виттман, всегда внимательный к мелочам, обратил внимание, что ни одна из уничтоженных им английских машин не несла на своей башне командирских тактических знаков. Это значило, что штабные танки разгромленного им батальона, а, возможно, и всего четвертого полка, затаились где-то на улочках Вильер-Бокажа.
+&lt;br/&gt;&lt;br/&gt;
+Что ж, как говорит Гейнц Гудериан, "бить так бить!"
+&lt;br/&gt;&lt;br/&gt;
+Машина – вперед!</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_3_mis_hint1">
+<Russian>Ваш танк №222 сломался</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_2_mis_starttext">
+<Russian>Вильер-Бокаж&lt;br/&gt;Окресности Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_2_mis_starttext2">
+<Russian>Через 20-ть минут&lt;br/&gt;Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
+<Container name="TASK_4_MIS">
+
+<Key ID="STR_ifa3_tiger_4_mis_task1">
+<Russian>Найти танк Тигр в Вильер-Бокаже</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_4_mis_task1_des">
+<Russian>Найти танк, брошенный в Вильер-Бокаже и починить его.</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_4_mis_task2">
+<Russian>Отразить контратаку (20-ть минут)</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_4_mis_task2_des">
+<Russian>Отразите контратаку союзников до прибытия панцергренадеров.</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_4_mis_plan1">
+<Russian>Ситуация</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_4_mis_plan1_1">
+<Russian>За этот долгий день Виттман и его люди совершили немало славных дел, перед которыми померкли даже их собственные подвиги на Восточном фронте. Но возвращение в Вильер-Бокаж, наводненный англичанами, превосходило по своей дерзости все, что было сделано ранее. Виттман знал: если им удастся воплотить задуманное, их имена навеки войдут в анналы военной истории.</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_4_mis_starttext">
+<Russian>Окресности Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
+<Original></Original>
+</Key>
+
+<Key ID="STR_ifa3_tiger_4_mis_hint1">
+<Russian>Осталось 20-ть минут до прибытия панцергренадеров</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_4_mis_hint2">
+<Russian>Осталось 15-ть минут до прибытия панцергренадеров</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_4_mis_hint3">
+<Russian>Осталось 10-ть минут до прибытия панцергренадеров</Russian>
+<Original></Original>
+</Key>
+<Key ID="STR_ifa3_tiger_4_mis_hint4">
+<Russian>Осталось 2-ть минут до прибытия панцергренадеров</Russian>
+<Original></Original>
+</Key>
+
+</Container>
+
 
 
 <Container name="SAY_1_MIS">
@@ -543,7 +634,7 @@
 <Original></Original>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4_say6">
-<Russian> К сожалению, гренадеры не успели воспользоваться плодами вашей атаки. Мотопехота седьмой бронетанковой дивизии просочилась в город и быстро окопалась на его окраинах.</Russian>
+<Russian>К сожалению, гренадеры не успели воспользоваться плодами вашей атаки. Мотопехота седьмой бронетанковой дивизии просочилась в город и быстро окопалась на его окраинах.</Russian>
 <Original></Original>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4_say7">

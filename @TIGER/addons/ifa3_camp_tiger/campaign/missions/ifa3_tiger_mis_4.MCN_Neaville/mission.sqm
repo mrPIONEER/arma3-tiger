@@ -5,25 +5,220 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=11;
+		nextID=229;
+	};
+	class MarkerIDProvider
+	{
+		nextID=9;
 	};
 	class Camera
 	{
-		pos[]={3969.5034,77.972008,1453.7482};
-		dir[]={-0.86730105,-0.17364819,-0.46651393};
-		up[]={-0.15292858,0.98480767,-0.082258992};
-		aside[]={-0.47371063,0,0.8806805};
+		pos[]={2569.5706,92.832001,2290.2795};
+		dir[]={-0.059649307,-0.46736792,0.88205767};
+		up[]={-0.031533841,0.88406092,0.46630594};
+		aside[]={0.99772757,-1.2017426e-007,0.067472026};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-
+	"WW2_Assets_c_Characters_Germans_c_GER_Wehrmacht",
+	"WW2_Core_c_WW2_EditorPreviews_c",
+	"WW2_Core_c_IF_Gui_c",
+	"A3_Ui_F",
+	"WW2_Assets_c_Vehicles_Wheeled_c_Kfz1",
+	"WW2_Assets_c_Vehicles_Pictures_c",
+	"WW2_Assets_c_Vehicles_Wheeled_c",
+	"WW2_Assets_c_Vehicles_SimpleObjects_c",
+	"WW2_Assets_c_Misc_Items_c",
+	"A3_Modules_F_Curator_Misc",
+	"WW2_Objects_c_Structures_WW2_BET_Buildings_c",
+	"A3_Modules_F",
+	"WW2_Objects_c_Misc_I44_ShowClassInEditor_Buildings_c",
+	"WW2_Objects_c_Misc_WW2_SimpleObjects_c_I44",
+	"WW2_Objects_c_Misc_I44_EditorMapSizeAndIcon_c",
+	"WW2_Objects_c_Misc_I44_EditorPreviews_c",
+	"WW2_Objects_c_Misc_WW2_EditorPreview_c",
+	"WW2_Objects_c_Misc_WW2_SimpleObjects_c_WW2",
+	"WW2_Objects_c_Misc_IF_EditorMapSizeAndIcon_c",
+	"WW2_Objects_c_Structures_IF_Buildings_c",
+	"WW2_Objects_c_Misc_WW2_SimpleObjects_c_IF",
+	"WW2_Objects_c_Misc_IF_EditorPreview_c",
+	"WW2_Objects_c_Structures_IF_Buildings2_c",
+	"WW2_Assets_c_Vehicles_Wrecks_c",
+	"WW2_Objects_c_Misc_IF_CoreData_c",
+	"WW2_Objects_c_Structures_I44_Buildings_c",
+	"WW2_Core_c_I44_Markers_c",
+	"WW2_Assets_c_Vehicles_Tanks_c_PzKpfwVI_E",
+	"WW2_Assets_c_Vehicles_Wheeled_c_OpelBlitz",
+	"WW2_Assets_c_Vehicles_Icons_c"
 };
-
+class AddonsMetaData
+{
+	class List
+	{
+		items=30;
+		class Item0
+		{
+			className="WW2_Assets_c_Characters_Germans_c_GER_Wehrmacht";
+			name="WW2_Assets_c_Characters_Germans_c_GER_Wehrmacht";
+		};
+		class Item1
+		{
+			className="WW2_Core_c_WW2_EditorPreviews_c";
+			name="WW2_Core_c_WW2_EditorPreviews_c";
+		};
+		class Item2
+		{
+			className="WW2_Core_c_IF_Gui_c";
+			name="WW2_Core_c_IF_Gui_c";
+		};
+		class Item3
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="WW2_Assets_c_Vehicles_Wheeled_c_Kfz1";
+			name="WW2_Assets_c_Vehicles_Wheeled_c_Kfz1";
+		};
+		class Item5
+		{
+			className="WW2_Assets_c_Vehicles_Pictures_c";
+			name="WW2_Assets_c_Vehicles_Pictures_c";
+		};
+		class Item6
+		{
+			className="WW2_Assets_c_Vehicles_Wheeled_c";
+			name="WW2_Assets_c_Vehicles_Wheeled_c";
+		};
+		class Item7
+		{
+			className="WW2_Assets_c_Vehicles_SimpleObjects_c";
+			name="WW2_Assets_c_Vehicles_SimpleObjects_c";
+		};
+		class Item8
+		{
+			className="WW2_Assets_c_Misc_Items_c";
+			name="WW2_Assets_c_Misc_Items_c";
+		};
+		class Item9
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="WW2_Objects_c_Structures_WW2_BET_Buildings_c";
+			name="WW2_Objects_c_Structures_WW2_BET_Buildings_c";
+		};
+		class Item11
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="WW2_Objects_c_Misc_I44_ShowClassInEditor_Buildings_c";
+			name="WW2_Objects_c_Misc_I44_ShowClassInEditor_Buildings_c";
+		};
+		class Item13
+		{
+			className="WW2_Objects_c_Misc_WW2_SimpleObjects_c_I44";
+			name="WW2_Objects_c_Misc_WW2_SimpleObjects_c_I44";
+		};
+		class Item14
+		{
+			className="WW2_Objects_c_Misc_I44_EditorMapSizeAndIcon_c";
+			name="WW2_Objects_c_Misc_I44_EditorMapSizeAndIcon_c";
+		};
+		class Item15
+		{
+			className="WW2_Objects_c_Misc_I44_EditorPreviews_c";
+			name="WW2_Objects_c_Misc_I44_EditorPreviews_c";
+		};
+		class Item16
+		{
+			className="WW2_Objects_c_Misc_WW2_EditorPreview_c";
+			name="WW2_Objects_c_Misc_WW2_EditorPreview_c";
+		};
+		class Item17
+		{
+			className="WW2_Objects_c_Misc_WW2_SimpleObjects_c_WW2";
+			name="WW2_Objects_c_Misc_WW2_SimpleObjects_c_WW2";
+		};
+		class Item18
+		{
+			className="WW2_Objects_c_Misc_IF_EditorMapSizeAndIcon_c";
+			name="WW2_Objects_c_Misc_IF_EditorMapSizeAndIcon_c";
+		};
+		class Item19
+		{
+			className="WW2_Objects_c_Structures_IF_Buildings_c";
+			name="WW2_Objects_c_Structures_IF_Buildings_c";
+		};
+		class Item20
+		{
+			className="WW2_Objects_c_Misc_WW2_SimpleObjects_c_IF";
+			name="WW2_Objects_c_Misc_WW2_SimpleObjects_c_IF";
+		};
+		class Item21
+		{
+			className="WW2_Objects_c_Misc_IF_EditorPreview_c";
+			name="WW2_Objects_c_Misc_IF_EditorPreview_c";
+		};
+		class Item22
+		{
+			className="WW2_Objects_c_Structures_IF_Buildings2_c";
+			name="WW2_Objects_c_Structures_IF_Buildings2_c";
+		};
+		class Item23
+		{
+			className="WW2_Assets_c_Vehicles_Wrecks_c";
+			name="WW2_Assets_c_Vehicles_Wrecks_c";
+		};
+		class Item24
+		{
+			className="WW2_Objects_c_Misc_IF_CoreData_c";
+			name="WW2_Objects_c_Misc_IF_CoreData_c";
+		};
+		class Item25
+		{
+			className="WW2_Objects_c_Structures_I44_Buildings_c";
+			name="WW2_Objects_c_Structures_I44_Buildings_c";
+		};
+		class Item26
+		{
+			className="WW2_Core_c_I44_Markers_c";
+			name="WW2_Core_c_I44_Markers_c";
+		};
+		class Item27
+		{
+			className="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwVI_E";
+			name="WW2_Assets_c_Vehicles_Tanks_c_PzKpfwVI_E";
+		};
+		class Item28
+		{
+			className="WW2_Assets_c_Vehicles_Wheeled_c_OpelBlitz";
+			name="WW2_Assets_c_Vehicles_Wheeled_c_OpelBlitz";
+		};
+		class Item29
+		{
+			className="WW2_Assets_c_Vehicles_Icons_c";
+			name="WW2_Assets_c_Vehicles_Icons_c";
+		};
+	};
+};
 randomSeed=13208294;
 class ScenarioData
 {
@@ -93,17 +288,17 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=1944;
+		year=2035;
 		month=1;
 		day=1;
-		hour=12;
-		minute=0;
+		hour=16;
+		minute=-6;
 		startFogDecay=0;
 		forecastFogDecay=0;
 	};
 	class Entities
 	{
-		items=1;
+		items=54;
 		class Item0
 		{
 			dataType="Group";
@@ -116,8 +311,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3773.6106,30.212685,156.6908};
-						angles[]={0,1.1593176,0};
+						position[]={3752.5403,31.101192,505.49945};
+						angles[]={0,0.76085919,0};
 					};
 					side="West";
 					flags=7;
@@ -125,14 +320,33 @@ class Mission
 					{
 						rank="LIEUTENANT";
 						name="s1";
+						isPlayer=1;
 						isPlayable=1;
 					};
 					id=6;
 					type="LIB_GER_tank_unterofficer";
-					atlOffset=0.0060195923;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03Ger";
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -151,7 +365,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -159,7 +373,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3771.9595,30.215191,153.6427};
+						position[]={3749.7458,30.922876,502.08017};
 						angles[]={0,1.252937,0};
 					};
 					side="West";
@@ -172,7 +386,6 @@ class Mission
 					};
 					id=7;
 					type="LIB_GER_tank_crew";
-					atlOffset=-0.0016040802;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -202,7 +415,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3771.2017,30.223457,151.47083};
+						position[]={3748.988,30.812344,499.90829};
 						angles[]={0,1.3325065,0};
 					};
 					side="West";
@@ -215,7 +428,6 @@ class Mission
 					};
 					id=8;
 					type="LIB_GER_tank_crew";
-					atlOffset=-0.0016040802;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -245,7 +457,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3769.7605,30.230854,149.39465};
+						position[]={3747.5469,30.593496,497.83212};
 						angles[]={0,1.3583549,0};
 					};
 					side="West";
@@ -258,7 +470,6 @@ class Mission
 					};
 					id=9;
 					type="LIB_GER_tank_crew";
-					atlOffset=-0.00049781799;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -288,7 +499,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3769.0566,30.224482,147.33777};
+						position[]={3746.843,30.433611,495.77524};
 						angles[]={0,1.3876765,0};
 					};
 					side="West";
@@ -301,7 +512,6 @@ class Mission
 					};
 					id=10;
 					type="LIB_GER_tank_crew";
-					atlOffset=-0.00040054321;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -331,7 +541,1102 @@ class Mission
 			{
 			};
 			id=5;
-			atlOffset=0.0060195923;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={3736.8342,46.368538,497.32889};
+			name="ger";
+			type="LIB_Faction_WEHRMACHT";
+			id=11;
+			atlOffset=16.265598;
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3732.8411,31.430777,500.7785};
+				angles[]={0.019996032,1.870937,6.268167};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=12;
+			type="LIB_Kfz1";
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3734.76,30.010572,494.23907};
+				angles[]={6.2033553,1.8259494,0.044150531};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=13;
+			type="LIB_Static_OpelBlitz_Radio";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3736.1873,30.064333,495.00598};
+				angles[]={6.2623858,0,6.2681713};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=14;
+			type="LIB_GerRadio";
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3754.9246,31.19799,507.79324};
+						angles[]={6.2612152,3.6280274,0.014717581};
+					};
+					side="West";
+					flags=6;
+					class Attributes
+					{
+						name="of";
+					};
+					id=16;
+					type="LIB_GER_ober_lieutenant";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03Ger";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=15;
+		};
+		class Item6
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={2857.7017,47.286415,1767.4419};
+				angles[]={0,1.791905,0};
+			};
+			areaSize[]={1164.5109,0,1400};
+			areaIsRectangle=1;
+			flags=1;
+			id=17;
+			type="ModuleCoverMap_F";
+			atlOffset=12.587009;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4047.01,59.595863,2383.158};
+				angles[]={0,3.5508151,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=18;
+			type="Land_WW2_BET_Kirche_2";
+			atlOffset=0.29489136;
+		};
+		class Item8
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3979.4094,43.866108,2361.0491};
+				angles[]={0.0032018756,1.9648917,0.014439552};
+			};
+			areaSize[]={70,0,5};
+			areaIsRectangle=1;
+			flags=1;
+			id=19;
+			type="ModuleHideTerrainObjects_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="#filter";
+					expression="_this setVariable [""#filter"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="#hideLocally";
+					expression="_this setVariable [""#hideLocally"",_value]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3959.5764,44.676323,2316.6128};
+				angles[]={0,1.83803,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=20;
+			type="Land_I44_Buildings_Woodfence01";
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3963.4314,47.047905,2320.5718};
+				angles[]={0,1.947167,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=21;
+			type="Land_WW2_BET_Haus_5_BS_A";
+			atlOffset=3.8146973e-006;
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3967.9924,45.043327,2324.5281};
+				angles[]={0,5.0577755,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=22;
+			type="Land_I44_Buildings_Istanlong";
+			atlOffset=0.025169373;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3967.3606,46.779099,2333.0164};
+				angles[]={0,0.40026182,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=23;
+			type="Land_WW2_BET_Haus_3_FW_A";
+			atlOffset=0.0053939819;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3984.8323,48.737915,2372.9233};
+				angles[]={0,1.9997585,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=24;
+			type="Land_WW2_BET_Haus_4_FW_B";
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3981.9055,46.772346,2367.1204};
+				angles[]={0,1.8969622,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=25;
+			type="Land_WW2_BET_Haus_5_BS_A";
+			atlOffset=0.0029296875;
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3979.7263,49.188244,2360.6055};
+				angles[]={0,1.9180679,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=26;
+			type="Land_WW2_BET_Haus_5_BS_C";
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3970.8762,48.821266,2342.5364};
+				angles[]={0,1.9516128,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=27;
+			type="Land_WW2_BET_Haus_4_BS_A";
+			atlOffset=0.013832092;
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3973.5442,48.780724,2349.0627};
+				angles[]={0,1.9643198,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=28;
+			type="Land_WW2_BET_Haus_4_BS_A2";
+			atlOffset=0.01399231;
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3992.4558,46.820572,2395.2288};
+				angles[]={0,0.40076929,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=29;
+			type="Land_WW2_House_1floor_Pol";
+		};
+		class Item19
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4001.9465,46.695637,2416.4902};
+				angles[]={0,3.5464535,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=30;
+			type="Land_WW2_Dlc1_Kirpich_1floor";
+			atlOffset=0.0070114136;
+		};
+		class Item20
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3991.6174,46.050827,2379.6741};
+				angles[]={0,1.9433153,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=31;
+			type="Land_WW2_City_Shop_1e";
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3974.259,44.460934,2393.8523};
+				angles[]={0,4.1308651,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=32;
+			type="Land_WW2_Market3";
+		};
+		class Item22
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3973.6174,44.975624,2399.8652};
+				angles[]={0,4.9685116,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=33;
+			type="Land_WW2_Market2";
+			atlOffset=3.8146973e-006;
+		};
+		class Item23
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4143.8936,47.081379,2361.4741};
+				angles[]={0.01378487,2.0747561,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=34;
+			type="LIB_OpelBlitz_Wreck";
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3992.2258,44.512714,2432.6121};
+				angles[]={0.020052591,2.0874956,0.010426882};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=35;
+			type="Land_I44_Buildings_Barbedwire2";
+		};
+		class Item25
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4148.0947,46.013882,2366.7729};
+				angles[]={0,5.1707115,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=36;
+			type="Land_WW2_Krater";
+		};
+		class Item26
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3991.7131,43.490955,2443.3528};
+				angles[]={0,5.1707115,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=37;
+			type="Land_WW2_Krater";
+		};
+		class Item27
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4105.1221,50.677525,2371.6125};
+				angles[]={0,3.7116125,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=38;
+			type="Land_I44_House_Tall_Sniper";
+		};
+		class Item28
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4116.9863,50.094109,2366.0735};
+				angles[]={0,3.5117071,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=39;
+			type="Land_WW2_BET_Haus_4_BS_B";
+		};
+		class Item29
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3993.1379,45.030201,2429.6277};
+				angles[]={0,1.241107,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=40;
+			type="LIB_M4A3_75_wreck";
+			atlOffset=0.43289185;
+		};
+		class Item30
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3997.3767,44.640503,2426.9973};
+				angles[]={0.0072176647,0.41669542,0.010426882};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=41;
+			type="Land_I44_Buildings_Barbedwire2";
+		};
+		class Item31
+		{
+			dataType="Marker";
+			position[]={2556.8826,44.151669,2501.9629};
+			name="zona_ups";
+			markerType="ELLIPSE";
+			type="ellipse";
+			fillName="Border";
+			a=268.18301;
+			b=252.76199;
+			drawBorder=1;
+			id=156;
+			atlOffset=1.1516685;
+		};
+		class Item32
+		{
+			dataType="Marker";
+			position[]={2477.9641,45.756763,2559.5676};
+			name="tank1";
+			type="I44_A_Veh_Tank";
+			id=157;
+		};
+		class Item33
+		{
+			dataType="Marker";
+			position[]={2477.4551,45.74847,2560.9534};
+			name="tank_rolik";
+			type="LIB_Empty";
+			id=177;
+		};
+		class Item34
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={2479.8198,48.187943,2559.3228};
+				angles[]={0.01282817,1.6082511,6.2615256};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				health=0.87661612;
+				ammo=0.71360308;
+				fuel=0.47751543;
+				init="call{this setVariable [""LIB_Numbers"",222];}";
+				name="tank1";
+			};
+			id=194;
+			type="LIB_PzKpfwVI_E_1";
+			atlOffset=-9.5367432e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item35
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3407.9504,40.777664,754.59015};
+				angles[]={0.037686978,4.2563963,6.2519073};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this setVariable [""LIB_Numbers"",200];}";
+				name="tank3";
+			};
+			id=195;
+			type="LIB_PzKpfwVI_E_tarn52c";
+			atlOffset=-0.0066452026;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item36
+		{
+			dataType="Marker";
+			position[]={2569.103,59.265972,2504.6929};
+			name="brit";
+			type="flag_UK";
+			id=196;
+			atlOffset=16.265972;
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3391.9722,38.036228,773.43341};
+						angles[]={0,2.9740632,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						name="t1_1";
+					};
+					id=198;
+					type="LIB_GER_tank_unterofficer";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3390.7583,37.926357,776.21832};
+						angles[]={0,2.9740632,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+						name="t1_2";
+					};
+					id=199;
+					type="LIB_GER_tank_crew";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3393.9719,37.909462,774.84021};
+						angles[]={0,2.9740632,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+						name="t1_3";
+					};
+					id=200;
+					type="LIB_GER_tank_crew";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3395.4102,37.852074,775.19379};
+						angles[]={0,2.9740632,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+						name="t1_4";
+					};
+					id=207;
+					type="LIB_GER_tank_crew";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3396.6882,37.797066,775.58618};
+						angles[]={0,2.9740632,0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						rank="SERGEANT";
+						name="t1_5";
+					};
+					id=209;
+					type="LIB_GER_tank_crew";
+					atlOffset=3.8146973e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=197;
+		};
+		class Item38
+		{
+			dataType="Marker";
+			position[]={3399.3982,38.686611,751.93256};
+			name="s1";
+			type="Empty";
+			id=211;
+		};
+		class Item39
+		{
+			dataType="Marker";
+			position[]={3402.1201,38.684681,749.74554};
+			name="s2";
+			type="Empty";
+			id=212;
+			atlOffset=0.0002822876;
+		};
+		class Item40
+		{
+			dataType="Marker";
+			position[]={3405.46,38.601311,749.05463};
+			name="s3";
+			type="Empty";
+			id=213;
+			atlOffset=0.00025558472;
+		};
+		class Item41
+		{
+			dataType="Marker";
+			position[]={3408.7429,38.527863,748.13263};
+			name="s4";
+			type="Empty";
+			id=214;
+			atlOffset=0.00035476685;
+		};
+		class Item42
+		{
+			dataType="Marker";
+			position[]={3405.115,38.719402,745.94464};
+			name="s5";
+			type="Empty";
+			id=215;
+		};
+		class Item43
+		{
+			dataType="Trigger";
+			position[]={2477.2991,45.777084,2559.1069};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{tank_zachistka=true}";
+				sizeA=69.253998;
+				sizeB=73.103996;
+				activationType="NOT PRESENT";
+				activationBy="GUER";
+			};
+			id=216;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item44
+		{
+			dataType="Marker";
+			position[]={2457.9221,46.224998,2562.301};
+			name="tank1_car";
+			type="Empty";
+			id=217;
+			atlOffset=0.00038528442;
+		};
+		class Item45
+		{
+			dataType="Marker";
+			position[]={2456.3479,46.476002,2556.2141};
+			name="tank1_crew";
+			type="Empty";
+			id=218;
+			atlOffset=0.00034332275;
+		};
+		class Item46
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5009.1899,35.261936,102.11115};
+				angles[]={0.019250982,1.6814501,6.2222905};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="track_tank1";
+			};
+			id=220;
+			type="LIB_OpelBlitz_Open_Y_Camo";
+			atlOffset=-0.055000305;
+		};
+		class Item47
+		{
+			dataType="Marker";
+			position[]={2475.2998,45.883675,2554.4297};
+			name="s1_1";
+			type="Empty";
+			id=222;
+		};
+		class Item48
+		{
+			dataType="Marker";
+			position[]={2476.8123,45.859745,2553.4883};
+			name="s2_1";
+			type="Empty";
+			id=223;
+		};
+		class Item49
+		{
+			dataType="Marker";
+			position[]={2477.0747,45.837063,2554.8125};
+			name="s3_1";
+			type="Empty";
+			id=224;
+		};
+		class Item50
+		{
+			dataType="Marker";
+			position[]={2478.5623,45.809612,2554.4407};
+			name="s4_1";
+			type="Empty";
+			id=225;
+		};
+		class Item51
+		{
+			dataType="Marker";
+			position[]={2478.2319,45.839687,2552.655};
+			name="s5_1";
+			type="Empty";
+			id=226;
+		};
+		class Item52
+		{
+			dataType="Marker";
+			position[]={2492.502,45.32,2555.512};
+			name="tank3_pos";
+			type="Empty";
+			id=227;
+			atlOffset=-0.00030136108;
+		};
+		class Item53
+		{
+			dataType="Marker";
+			position[]={3408.27,38.302116,754.63501};
+			name="tank3";
+			type="I44_A_Veh_Tank";
+			id=228;
 		};
 	};
 };
