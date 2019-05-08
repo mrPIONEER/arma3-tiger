@@ -73,20 +73,9 @@ class MissionDefault
 		author = "$STR_avtor_ifa3_tiger";
 		overviewPicture = "\ifa3_camp_tiger\t\4.jpg";
 		overviewText = "STR_ifa3_tiger_mis4_text";	
-		end1 = ifa3_camp_tiger_5mis;
+		end1 = ;
 		lost = ifa3_camp_tiger_4mis;
 		template = ifa3_camp_tiger_4mis.MCN_Neaville;
-		};
-		
-        class ifa3_camp_tiger_5mis: MissionDefault
-		{
-		briefingName = "$STR_ifa3_tiger_mis5";
-		author = "$STR_avtor_ifa3_tiger";
-		overviewPicture = "\ifa3_camp_tiger\t\5.jpg";
-		overviewText = "STR_ifa3_tiger_mis5_text";	
-		end1 = "";
-		lost = ifa3_camp_tiger_5mis;
-		template = ifa3_camp_tiger_5mis.MCN_Neaville;
 		};
 		
 	};

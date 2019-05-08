@@ -1,13 +1,14 @@
 ﻿/*
+ Автор: PIONEER
+
  Принудительная высадка с транспорта
  
  Активация:
- _n=[имя_группы,имя_самолёта] execvm "scripts\getout_group.sqf"
+ [имя_группы,имя_самолёта] execvm "scripts\getout_group.sqf"
  
  Пример:
- _n=[t1_1,tank1] execvm "ifa3_camp_tiger\f\getout_group.sqf"
+ [kolona_peh_1,kolona_tank_1] execvm "ifa3_camp_tiger\f\getout_group.sqf"
  
- PIONEER
 */
 
 _CargoGroup=_this select 0;
@@ -21,5 +22,5 @@ _unit action ["eject",_heli];
 unassignvehicle _unit;
 sleep 0.5;
 _count=_count+1;
-if (_count==_limit) exitWith {hint "exit"};
+if (_count==_limit) exitWith {};
 };

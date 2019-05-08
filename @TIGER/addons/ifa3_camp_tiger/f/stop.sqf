@@ -30,7 +30,7 @@ terminate stop1;
 
 if (local player) then {
 _pname = format ["%1",name player];
-mess1 = "<t color='#ff0000'>STOP</t>" +_pname+"<t color='#ff0000'><br /></t>";
+mess1 = "<t color='#ff0000'>STOP</t>" +_pname+ "<t color='#ff0000'><br /></t>";
 nul = [mess1,0,0.5,5,1] spawn BIS_fnc_dynamicText;
 sleep 5;
 nul = ["<t color='#ff0000'>5</t>",0,0.4,1,1] spawn BIS_fnc_dynamicText;

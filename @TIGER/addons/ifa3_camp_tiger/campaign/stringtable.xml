@@ -1,6 +1,27 @@
 ﻿<Project name="Project_IFA3_Tiger">
 <Package name="Package_IFA3_Tiger">
 
+<Container name="tigr_mod">
+
+<Key ID="STR_ifa3_tiger_mod_nel_island">
+<Russian>[ТИГР] Вильер-Бокаж</Russian>
+<Original>[TIGER] Villers-Bocage</Original>
+<German>[TIGER] Villers-Bocage</German>
+</Key>
+<Key ID="STR_ifa3_tiger_mod_nel_road">
+<Russian>[ТИГР] Дорога к Вильер-Бокаж</Russian>
+<Original>[TIGER] Road to Villers-Bocage</Original>
+<German>[TIGER] Der Weg zum Villier-Bocage</German>
+</Key>
+<Key ID="STR_ifa3_tiger_mod_nel">
+<Russian>Вильер-Бокаж</Russian>
+<Original>Villers-Bocage</Original>
+<German>Villers-Bocage</German>
+</Key>
+
+</Container>
+
+
 <Container name="Opisanie_campanii">
 
 <Key ID="STR_CAMP_ifa3_tiger">
@@ -8,8 +29,7 @@
 <Original>TIGER</Original>
 </Key>  
 <Key ID="STR_avtor_ifa3_tiger">
-<Russian>[IMB] PIONEER</Russian>
-<Original>[IMB] PIONEER</Original>
+<Original>PIONEER</Original>
 </Key>
 <Key ID="STR_text_ifa3_tiger">
 <Russian>1944 год, июнь.&lt;br/&gt;
@@ -21,73 +41,90 @@
 
 <Key ID="STR_ifa3_tiger_mis1">
 <Russian>Первый контакт</Russian>
-<Original></Original>
+<Original>First contact</Original>
+<German>Erster Kontakt</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis1_coop">
 <Russian>Кампания ТИГР: 1 миссия - Первый контакт</Russian>
-<Original></Original>
+<Original>TIGER campaign: 1 mission - First contact</Original>
+<German>Kampagne TIGER: 1 Mission - Erster Kontakt</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis1_text">
-<Russian>Описание 1</Russian>
+<Russian></Russian>
 <Original></Original>
+<German></German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis2">
 <Russian>Охотник</Russian>
-<Original></Original>
+<Original>Hunter</Original>
+<German>Der Jäger</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis2_coop">
 <Russian>Кампания ТИГР: 2 миссия - Охотник</Russian>
-<Original></Original>
+<Original>TIGER campaign: 2 mission - Hunter</Original>
+<German>Kampagne TIGER: 2 Mission - Der Jäger</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis2_text">
-<Russian>Описание 2</Russian>
+<Russian></Russian>
 <Original></Original>
+<German></German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis3">
 <Russian>Вильер-Бокаж</Russian>
-<Original></Original>
+<Original>Villers-Bocage</Original>
+<German>Villers-Bocage</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis3_coop">
 <Russian>Кампания ТИГР: 3 миссия - Вильер-Бокаж</Russian>
-<Original></Original>
+<Original>TIGER campaign: 3 mission - Villers-Bocage</Original>
+<German>Kampagne TIGER: 3 Mission - Villers-Bocage</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis3_text">
-<Russian>Описание 3</Russian>
+<Russian></Russian>
 <Original></Original>
+<German></German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4">
 <Russian>Ярость Тигра</Russian>
-<Original></Original>
+<Original>Tiger Fury</Original>
+<German>Tiger Wut</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4_coop">
 <Russian>Кампания ТИГР: 4 миссия - Ярость Тигра</Russian>
-<Original></Original>
+<Original>TIGER campaign: 4 mission - Tiger Fury</Original>
+<German>Kampagne TIGER: 4 Mission - Tiger Wut</German>
 </Key>
 <Key ID="STR_ifa3_tiger_mis4_text">
-<Russian>Описание 4</Russian>
+<Russian></Russian>
 <Original></Original>
+<German></German>
 </Key>
 
 
 <Key ID="STR_ifa3_tiger_lobby">
 <Russian>Слот командира обязателен. Запрещено отключать ИИ. Запрещено подключаться к текущей игре (JIP).</Russian>
-<Original></Original>
+<Original>The commander's slot is mandatory. It is forbidden to switch off the AI. Do not connect to the current game (JIP).</Original>
+<German>Der Slot des Kommandanten ist obligatorisch. Es ist verboten, die KI auszuschalten. Verbinden Sie sich nicht mit dem aktuellen Spiel (JIP).</German>
 </Key>
 <Key ID="STR_ifa3_tiger_end1">
 <Russian>Миссия пройдена!</Russian>
-<Original></Original>
+<Original>Mission accomplished!</Original>
+<German>Mission erfüllt!</German>
 </Key>
 <Key ID="STR_ifa3_tiger_kill_player">
 <Russian>Один из игроков умер...</Russian>
-<Original></Original>
+<Original>One of the players died...</Original>
+<German>Einer der Spieler ist gestorben.....</German>
 </Key>
 <Key ID="STR_ifa3_tiger_loser_jip">
 <Russian>Нельзя заходить во время игры</Russian>
-<Original></Original>
+<Original>You can't go in during the game</Original>
+<German>Du kannst während des Spiels nicht reingehen.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_kill_tiger">
 <Russian>Позор, ТИГР уничтожен...</Russian>
-<Original></Original>
+<Original>Shame, the TIGR has been destroyed...</Original>
+<German>Schade, das TIGER wurde zerstört...</German>
 </Key>
 
 </Container>
@@ -96,44 +133,53 @@
 
 <Key ID="STR_ifa3_tiger_s1">
 <Russian>Михаэль Виттман (командир)</Russian>
-<Original></Original>
+<Original>Michael Whittman (commander)</Original>
+<German>Michael Wittmann (Kommandant)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_s2">
 <Russian>Гаспар Колль (наводчик)</Russian>
-<Original></Original>
+<Original>Gaspard Coll (gunner)</Original>
+<German>Gaspar Koll (schütze)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_s3">
 <Russian>Вальтер Хенке (водитель)</Russian>
-<Original></Original>
+<Original>Walter Hanke (driver)</Original>
+<German>Walter Henke (fahrer)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_s4">
 <Russian>Ульрих Расснер (заряжающий)</Russian>
-<Original></Original>
+<Original>Ulrich Russner (loader)</Original>
+<German>Ulrich Russner (aufladen)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_s5">
 <Russian>Гюнтер Иррганг (радист)</Russian>
-<Original></Original>
+<Original>Gunter Irrgang (radio operator)</Original>
+<German>Gunter Irrgang (funker)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_of">
 <Russian>Офицер</Russian>
-<Original></Original>
+<Original>Officer</Original>
+<German>Officer</German>
 </Key>
 <Key ID="STR_ifa3_tiger_solder">
 <Russian>Солдат</Russian>
-<Original></Original>
+<Original>Soldier</Original>
+<German>Soldat</German>
 </Key>
-
 <Key ID="STR_ifa3_tiger_radio_st1">
 <Russian>Стрекоза-1</Russian>
 <Original></Original>
+<German></German>
 </Key>
 <Key ID="STR_ifa3_tiger_radio_st2">
 <Russian>Стрекоза-2</Russian>
 <Original></Original>
+<German></German>
 </Key>
 <Key ID="STR_ifa3_tiger_radio_st3">
 <Russian>Стрекоза-3</Russian>
 <Original></Original>
+<German></German>
 </Key>
 
 </Container>
@@ -143,47 +189,58 @@
 
 <Key ID="STR_ifa3_tiger_1_mis_task1">
 <Russian>Выдвинуться в Вильер-Бокаж</Russian>
-<Original></Original>
+<Original>Move to Villier-Bocage</Original>
+<German>Umzug nach Villier-Bocage</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task1_des">
 <Russian>Вашей роте необходимо выдвинуться в Вильер-Бокаж и перекрыть дорогу к Кан.</Russian>
-<Original></Original>
+<Original>Your company needs to move to Villier-Bocage and block the road to Caen.</Original>
+<German>Ihr Unternehmen muss nach Villier-Bocage umziehen und die Straße nach Caen blockieren.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task2">
 <Russian>Уничтожить БТР с рацией</Russian>
-<Original></Original>
+<Original>Destroy an APC with a radio</Original>
+<German>Vernichten Sie einen APC mit einem Funkgerät.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task2_des">
 <Russian>Необходимо уничтожить вражеский БТР с радиостанцией, иначе наши танки уничтожит вражеская авиация. БТР где-то в городе.</Russian>
-<Original></Original>
+<Original>It is necessary to destroy the enemy APC with the radio station, otherwise our tanks will be destroyed by the enemy aircraft. The APC is somewhere in town.</Original>
+<German>Es ist notwendig, den gegnerischen APC mit der Funkstation zu zerstören, sonst werden unsere Panzer vom gegnerischen Flugzeug zerstört. Der APC ist irgendwo in der Stadt.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task3">
 <Russian>Отбейте мост (восточную часть)</Russian>
-<Original></Original>
+<Original>Kick back the bridge (east side)</Original>
+<German>Kick die Brücke zurück (Ostseite)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task3_des">
 <Russian>Займите восточную часть города.</Russian>
-<Original></Original>
+<Original>Take over the eastern part of the city.</Original>
+<German>Übernimm den östlichen Teil der Stadt.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task4">
 <Russian>Отбейте мост (западную часть)</Russian>
-<Original></Original>
+<Original>Kick back the bridge (west side)</Original>
+<German>Die Brücke zurückschlagen (Westseite)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task4_des">
 <Russian>Займите западную часть города.</Russian>
-<Original></Original>
+<Original>Take over the west side of town.</Original>
+<German>Übernimm die Westseite der Stadt.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task5">
 <Russian>Вернитесь к танкам</Russian>
-<Original></Original>
+<Original>Go back to the tanks</Original>
+<German>Geht zurück zu den Tanks.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_task5_des">
 <Russian>Отлично! А теперь вернитесь к танками и продолжите свой путь к Вильер-Бокаж.</Russian>
-<Original></Original>
+<Original>Okay, great! Now get back to the tanks and continue your way to Villier-Bocage.</Original>
+<German>Okay, großartig! Jetzt geht zurück zu den Tanks und setzt euren Weg nach Villier-Bocage fort.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_plan1">
 <Russian>Ситуация</Russian>
-<Original></Original>
+<Original>Situation</Original>
+<German>Situation</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_plan1_1">
 <Russian>Михаэль Виттман знал, что его "Тигр" – лучший танк в мире. И знал он это не из речей доктора Йозефа Геббельса. Виттмана убедили в этом жестокие танковые побоища под Курском и на Правобережной Украине, когда юркие Т-34 с жестоким упрямством бросались на германских бронированных хищников. Но даже самый лучший танк и самые опытные танкисты не в состоянии вечно сдерживать натиск превосходящих сил противника. Этому Виттмана тоже научил Восточный фронт.&lt;br/&gt;&lt;br/&gt;
@@ -194,23 +251,28 @@
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_hint1">
 <Russian>Вы можете пропустить диалог через меню действий.</Russian>
-<Original></Original>
+<Original>You can skip the dialog through the action menu.</Original>
+<German>Sie können den Dialog durch das Aktionsmenü überspringen.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_hint2">
 <Russian>Уничтожить рацию и отбейте мост</Russian>
-<Original></Original>
+<Original>Destroy the radio and hit the bridge.</Original>
+<German>Zerstören Sie das Funkgerät und treffen Sie die Brücke.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_starttext">
 <Russian>Первый Контакт&lt;br/&gt;Дорога к Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
-<Original></Original>
+<Original>First contact&lt;br/&gt;The road to Wheeler-Bocage&lt;br/&gt;13.06.1944</Original>
+<German>Erstkontakt&lt;br/&gt;Der Weg zum Wheeler-Bocage&lt;br/&gt;13.06.1944</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_action1">
 <Russian>ПРОПУСТИТЬ ДИАЛОГ</Russian>
-<Original></Original>
+<Original>SKIP DIALOGUE</Original>
+<German>DIALOG ÜBERSPRINGEN</German>
 </Key>
 <Key ID="STR_ifa3_tiger_1_mis_action2">
 <Russian>ВЗЯТЬ КАРТУ</Russian>
-<Original></Original>
+<Original>TAKE THE MAP</Original>
+<German>NIMM DIE KARTE</German>
 </Key>
 </Container>
 
@@ -218,48 +280,59 @@
 
 <Key ID="STR_ifa3_tiger_2_mis_task0">
 <Russian>Тигр должен остаться целым</Russian>
-<Original></Original>
+<Original>The tiger has to stay intact</Original>
+<German>Der Tiger muss intakt bleiben.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task0_des">
 <Russian>Уничтожение Тигра недопустимо!</Russian>
-<Original></Original>
+<Original>The destruction of the Tiger is unacceptable!</Original>
+<German>Die Zerstörung des Tigers ist inakzeptabel!</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task1">
 <Russian>Узнать обстановку у панцергренадеров</Russian>
-<Original></Original>
+<Original>Find out from the Panzergrenaders</Original>
+<German>Erkundigen Sie sich bei den Panzergrenadern.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task1_des">
 <Russian>Дорога на Кан перекрыта, необходимо узнать обстановку у панцергренадеров.</Russian>
-<Original></Original>
+<Original>The road to Caen is blocked, you need to check with the Panzergrenaders.</Original>
+<German>Die Straße nach Caen ist gesperrt, Sie müssen sich bei den Panzergrenadern erkundigen.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task2">
 <Russian>Организовать засаду</Russian>
-<Original></Original>
+<Original>Set up an ambush</Original>
+<German>Einen Hinterhalt einrichten</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task2_des">
 <Russian>У вас есть немного времени. Вместе панцергренадерами организуйте засаду на вражескую танковою колону.</Russian>
-<Original></Original>
+<Original>You have some time. Set up an ambush on an enemy tank column with the armored personnel.</Original>
+<German>Du hast etwas Zeit. Richten Sie mit dem gepanzerten Personal einen Hinterhalt auf eine feindliche Panzerkolonne ein.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task3">
 <Russian>Уничтожить танковою колону</Russian>
-<Original></Original>
+<Original>Destroy the tank column</Original>
+<German>Zerstören Sie die Tanksäule.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task3_des">
 <Russian>Колона скоро будет здесь! О передвижении танков докладывают панцергренадеры.</Russian>
-<Original></Original>
+<Original>Colona will be here soon! Panzergrenaders report on the movement of tanks.</Original>
+<German>Colona wird bald hier sein! Panzergrenaders Bericht über die Bewegung von Panzern.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task4">
 <Russian>Найти и уничтожить миномёты</Russian>
-<Original></Original>
+<Original>Find and destroy mortars</Original>
+<German>Mörser finden und zerstören</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_task4_des">
 <Russian>Томмии разместили миномёты на севере, найдите и уничтожте их!</Russian>
-<Original></Original>
+<Original>Tommy's placed mortars in the north, find them and destroy them!</Original>
+<German>Tommys Mörser wurden im Norden platziert, finden und vernichten!</German>
 </Key>
 
 <Key ID="STR_ifa3_tiger_2_mis_plan1">
 <Russian>Ситуация</Russian>
-<Original></Original>
+<Original>Situation</Original>
+<German>Situation</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_plan1_1">
 <Russian>Пока что танкистам сопутствовала удача. Им удалось обвести вокруг пальца британских пилотов и расправиться с выскочками из 1-й воздушно-десантной дивизии. На дворе стояло трагическое лето 1944 и даже отчаянным сорвиголовам из мотопехоты этих подвигов хватило бы для того, чтобы получить трехдневный отпуск в Париж. Однако, Виттман и его люди носили в своих петлицах руны СС и были воспитаны самим Йозефом "Зеппом" Дитрихом. Они и слышать не хотели об отпуске. День только начинался и танкисты помнили, что работы у них – непочатый край. Вильер-Бокаж еще не показался, но каждый из людей Виттмана предчувствовал: машины противника появятся с минуты на минуту.</Russian>
@@ -268,16 +341,19 @@
 
 <Key ID="STR_ifa3_tiger_2_mis_hint1">
 <Russian>Садитесь в свой танк №200</Russian>
-<Original></Original>
+<Original>Get in tank number 200</Original>
+<German>In Tank Nummer 200 einsteigen</German>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_hint2">
 <Russian>Садитесь в танк №222</Russian>
-<Original></Original>
+<Original>Get in tank number 222</Original>
+<German>In Tank Nummer 222 einsteigen</German>
 </Key>
 
 <Key ID="STR_ifa3_tiger_2_mis_starttext">
 <Russian>Охотник&lt;br/&gt;Окресности Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
-<Original></Original>
+<Original>Охотник&lt;br/&gt;The neighborhoods of Wheeler-Bocage&lt;br/&gt;13.06.1944</Original>
+<German>Der Jäger&lt;br/&gt;Die Nachbarschaft von Wheeler-Bocage&lt;br/&gt;13.06.1944</German>
 </Key>
 
 </Container>
@@ -286,25 +362,30 @@
 
 <Key ID="STR_ifa3_tiger_3_mis_task1">
 <Russian>Найти и уничтожить офицерские танки</Russian>
-<Original></Original>
+<Original>Find and destroy officer tanks</Original>
+<German>Finden und zerstören Sie Offizierspanzer</German>
 </Key>
 <Key ID="STR_ifa3_tiger_3_mis_task1_des">
-<Russian>Прорваться в Вильер-Бокаж, обнаружить и уничтожить штабные танки (Шерман Fireflya) 4-го полка Лондонских Стрелков 7-ой бронетанковой дивизии.</Russian>
-<Original></Original>
+<Russian>Прорваться в Вильер-Бокаж, обнаружить и уничтожить штабные танки (Шерман Firefly) 4-го полка Лондонских Стрелков 7-ой бронетанковой дивизии.</Russian>
+<Original>Break through to Villier-Bocage, discover and destroy staff tanks (Sherman Firefly) of the 4th Regiment of the London Arrows 7th Armored Division.</Original>
+<German>Durchbrechen Sie Villier-Bocage, entdecken und zerstören Sie Panzer (Sherman Firefly) des 4. Regiments der London Arrows 7th Armored Division.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_3_mis_task2">
 <Russian>Отступить</Russian>
-<Original></Original>
+<Original>Retreat</Original>
+<German>Rückzug</German>
 </Key>
 <Key ID="STR_ifa3_tiger_3_mis_task2_des">
 <Russian>Танк сломался, покидайте машину и отступайте.</Russian>
-<Original></Original>
+<Original>The tank's broken, get out of the car and back off.</Original>
+<German>Der Tank ist kaputt, steig aus dem Auto und verschwinde.</German>
 </Key>
 
 
 <Key ID="STR_ifa3_tiger_3_mis_plan1">
 <Russian>Ситуация</Russian>
-<Original></Original>
+<Original>Situation</Original>
+<German>Situation</German>
 </Key>
 <Key ID="STR_ifa3_tiger_3_mis_plan1_1">
 <Russian>Вихрь боя захватил Виттмана. Он не ожидал, что громыхающая колонна английской танковой элиты, "Крыс Пустыни", станет беспомощной добычей одного-единственного разъяренного "Тигра". Там, на дороге, Виттман почувствовал: переменчивая фортуна повернулась лицом к сынам Рейха. Нужно использовать каждую секунду ее расположения!
@@ -319,16 +400,19 @@
 
 <Key ID="STR_ifa3_tiger_3_mis_hint1">
 <Russian>Ваш танк №222 сломался</Russian>
-<Original></Original>
+<Original>Your tank number 222 broke down</Original>
+<German>Deine Panzernummer 222 ist zusammengebrochen.</German>
 </Key>
-
 <Key ID="STR_ifa3_tiger_2_mis_starttext">
-<Russian>Вильер-Бокаж&lt;br/&gt;Окресности Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
-<Original></Original>
+<Russian>Окресности Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
+<Original>The neighborhoods of Wheeler-Bocage&lt;br/&gt;13.06.1944</Original>
+<German>Die Nachbarschaft von Wheeler-Bocage&lt;br/&gt;13.06.1944</German>
+</Key>
 </Key>
 <Key ID="STR_ifa3_tiger_2_mis_starttext2">
 <Russian>Через 20-ть минут&lt;br/&gt;Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
-<Original></Original>
+<Original>In 20 minutes&lt;br/&gt;Villier-Bocage&lt;br/&gt;13.06.1944</Original>
+<German>In 20 Minuten&lt;br/&gt;Villier-Bocage&lt;br/&gt;13.06.1944</German>
 </Key>
 
 </Container>
@@ -337,24 +421,28 @@
 
 <Key ID="STR_ifa3_tiger_4_mis_task1">
 <Russian>Найти танк Тигр в Вильер-Бокаже</Russian>
-<Original></Original>
+<Original>Find the Tiger tank in Villier-Bocage</Original>
+<German>Finden Sie den Tigerpanzer in Villier-Bocage.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_4_mis_task1_des">
 <Russian>Найти танк, брошенный в Вильер-Бокаже и починить его.</Russian>
-<Original></Original>
+<Original>Find the tank abandoned in Villier-Bocage and fix it.</Original>
+<German>Finde den verlassenen Tank in Villier-Bocage und repariere ihn.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_4_mis_task2">
 <Russian>Отразить контратаку (20-ть минут)</Russian>
-<Original></Original>
+<Original>Defend positions (20 minutes)</Original>
+<German>Verteidigen Sie Positionen (20 minuten)</German>
 </Key>
 <Key ID="STR_ifa3_tiger_4_mis_task2_des">
 <Russian>Отразите контратаку союзников до прибытия панцергренадеров.</Russian>
-<Original></Original>
+<Original>Counterattack the Allies before the Panzergrenaders arrive.</Original>
+<German>Gegenangriff der Alliierten, bevor die Panzergrenadiere ankommen.</German>
 </Key>
-
 <Key ID="STR_ifa3_tiger_4_mis_plan1">
 <Russian>Ситуация</Russian>
-<Original></Original>
+<Original>Situation</Original>
+<German>Situation</German>
 </Key>
 <Key ID="STR_ifa3_tiger_4_mis_plan1_1">
 <Russian>За этот долгий день Виттман и его люди совершили немало славных дел, перед которыми померкли даже их собственные подвиги на Восточном фронте. Но возвращение в Вильер-Бокаж, наводненный англичанами, превосходило по своей дерзости все, что было сделано ранее. Виттман знал: если им удастся воплотить задуманное, их имена навеки войдут в анналы военной истории.</Russian>
@@ -363,24 +451,28 @@
 
 <Key ID="STR_ifa3_tiger_4_mis_starttext">
 <Russian>Окресности Виллер-Бокаж&lt;br/&gt;13.06.1944</Russian>
-<Original></Original>
+<Original>The neighborhoods of Wheeler-Bocage&lt;br/&gt;13.06.1944</Original>
+<German>Die Nachbarschaft von Wheeler-Bocage&lt;br/&gt;13.06.1944</German>
 </Key>
-
 <Key ID="STR_ifa3_tiger_4_mis_hint1">
 <Russian>Осталось 20-ть минут до прибытия панцергренадеров</Russian>
-<Original></Original>
+<Original>20 minutes to the arrival of the Panzergrenaders</Original>
+<German>20 Minuten bis zur Ankunft der Panzergrenaders</German>
 </Key>
 <Key ID="STR_ifa3_tiger_4_mis_hint2">
 <Russian>Осталось 15-ть минут до прибытия панцергренадеров</Russian>
-<Original></Original>
+<Original>Fifteen minutes to the arrival of the Panzergrenaders</Original>
+<German>15 Minuten bis zur Ankunft der Panzergrenaders.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_4_mis_hint3">
 <Russian>Осталось 10-ть минут до прибытия панцергренадеров</Russian>
-<Original></Original>
+<Original>Ten minutes to the arrival of the Panzergrenaders</Original>
+<German>10 Minuten bis zur Ankunft der Panzergrenaders.</German>
 </Key>
 <Key ID="STR_ifa3_tiger_4_mis_hint4">
 <Russian>Осталось 2-ть минут до прибытия панцергренадеров</Russian>
-<Original></Original>
+<Original>2 minutes to the arrival of the Panzergrenaders</Original>
+<German>2 Minuten bis zur Ankunft der Panzergrenaders.</German>
 </Key>
 
 </Container>
