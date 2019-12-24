@@ -1,0 +1,91 @@
+SP\COOP-5 кампания посвященная битве за Виллер-Бокаж
+
+[b]ВНИМАНИЕ[/b]: эта кампания в ранней доступе, она не доработана до нужного уровня и не советую портить себе впечатление до релиза. Если вы готовы помочь ее доделать, тогда читайте ниже.
+
+[h1]Сюжет:[/h1]
+1944 год, июнь.
+Крупнейшая в истории десантная операция "Оверлорд" прошла успешно. Американские, английские и канадские войска, поддержанные тремя воздушно-десантными дивизиями, под ураганным огнем противника высадились в Нормандии. Сломив ожесточенное сопротивление германских войск, они преодолели прибрежную полосу и ведут тяжелые бои с целью прорыва неприятельской обороны и выхода на оперативный простор.
+
+В то время как американская армия под началом генерала Брэдли продвигается к порту Шербур, англичане и канадцы генерала Монтгомери вышли на подступы к Кану – узловому пункту немецкой обороны, запирающему дорогу на Париж. Вечером 12 июня 7-я бронетанковая дивизия англичан изготовилась к броску на городок Виллер-Бокаж. Это – легкая добыча. Населенный пункт обороняется горсткой немецких солдат без тяжелого оружия. Пройдя через Вильер-Бокаж, английские бронированные полчища смогут днем 13 июня беспрепятственно атаковать Кан с открытого южного фланга. Захват Кана позволит англичанам в считанные дни выйти на подступы к Парижу и решить судьбу германских армий во Франции.
+
+Британской армаде противостоит лишь несколько танков из 2-й роты 501-го батальона 1-го танкового корпуса СС. Командует ротой оберштурмфюрер СС Михаэль Виттман. Сегодня на него молятся не только защитники Кана, но и немецкие солдаты всех родов войск от Сен-Назера до Парижа.
+
+Сюжет и сценарий взят из игры "В тылу врага". Взята полная версия сценарий, в самой стратегии использовали только основные действия, все диалоги вырезали.
+
+[h1]Описание:[/h1]
+Данная кампания была полигоном для обучения меня скриптам и принципам создания миссий одновременно для одиночного режима и для кооперативного. В процессе разработки разобрался что к чему, не полностью конечно, но понимание уже есть, свою цель я выполнил. Кампания открыта, код комментирован и для себя вы можете найти много чего полезного, крайне рекомендую, особенно новичкам.
+
+Обучающие видео по разработке этой кампании в плейлисте, чтобы понять что к чему будет крайне полезно (подписывайтесь на мой ютуб канал):
+https://www.youtube.com/playlist?list=PL2Cl9Wa3LJi-fEnd-nUnnokwBkAvvBRXG
+
+Всё, что я хотел на данный момент сделать я сделал, мне не хватает времени в неё играть и доделывать энтузиазма уже нет. Она кооперативная и мне нужно слишком много времени, чтобы проверить все.
+
+[b]На данный момент нужно доделать:[/b]
+- тестирование кампании в sp\coop режиме
+- рандомизация в зависимости от кол-во играющих
+- дополнительные задания для coop режима
+- перевод диалогов и брифинга на английский и немецкий язык (все текста в ifa3_camp_tiger\campaign\stringtable.xml)
+- многоголосная озвучка на немецком или русском языке (сейчас тестовая)
+
+[b]Что нужно знать:[/b]
+- для одиночного режима найдите кампанию в кампаниях (вот это поворот) :)
+- миссии в мультиплеере подписаны тегом TIGER
+- нет много аддонов, только ifa3_screams из IFA3 Liberation.
+- можете добавлять аддоны какие хотите, пробуйте.
+- нельзя зайти после старта миссии
+- провал если хоть один игрок умрет
+- возраждение через медицинский пакет
+
+Поэтому если готовы помочь - велком. О всех найденных багах пишите, о всех предложениях также. Если будет спрос, доделаем кампанию до финального состояния, если нет, то пусть будет в виде материала для обучения миссиямейкеров.
+
+Спасибо [IMB]Soviet за создание декораций к миссиям.
+
+[h1]For English speakers[/h1]
+Usually I make different texts in Steam for different languages, but not this time. All you need to know:
+
+- the plot is taken from the game "Soldiers: Heroes Of World War II"
+- campaign in alpha version, it is not completed yet, but you can help
+- campaign dedicated to the battle of Ville-Bocage
+- missions in multiplayer are signed with the TIGER tag
+- there are not many addons, only ifa3_screams from IFA3 Liberation.
+- you can add any addons you want, try it.
+- you can not go after the start of the mission (JIP)
+- fail, if at least one player dies
+- revive(medical package)
+
+[b]At the moment:[/b]
+- testing the campaign in sp\coop mode
+- additional tasks for coop mode
+- translation of dialogues and briefings into English and German (all text in ifa3_camp_tiger\campaign\stringtable.xml)
+- voice acting German or Russian (now test voice)
+
+Only the most important information has been translated into English and German, everything else in Russian and Russian test voice acting. My English is too weak to translate dialogs, and for a good translation need motivated players from the community or money :). Google will not help. The translation is not perfect, you can fix it.
+
+Therefore, if you are ready to help - welcom. Write about all bugs, about all offers as well.
+
+Thanks [IMB]Soviet for creating the scenery for the missions.
+
+
+[quote]
+[b]Donat[/b]
+
+http://www.donationalerts.ru/r/pioneer_chovban
+PayPal, MasterCard, Visa, YandexMoney, Qiwi, WebMoney
+
+YandexMoney: 41001765497246
+WebMoney: Z916441607318, R150442472557
+
+[url=https://www.youtube.com/channel/UCW6SMbTQPV76lmGlEJt-qgg/]YouTube[/url]
+[url=https://vk.com/mchovban]Vkontakte[/url]
+[url=https://www.instagram.com/mikhailchovban/]instagram[/url]
+Discord- PIONEER#5817
+
+Другие работы \ Other jobs
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1504958565]Миротворец \ Peacemaker [/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1360746995]Дух войны \ Spirit Of War[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1360746995]Полигон смерти \ Range of Death[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1360746995]Полигон смерти \ Range of Death[/url]
+
+[/quote]
+

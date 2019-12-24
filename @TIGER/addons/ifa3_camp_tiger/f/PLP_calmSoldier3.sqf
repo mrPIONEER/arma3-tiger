@@ -9,47 +9,53 @@
 
 	Parameter(s):
 	
-> «STAND» — стоит с винтовкой
-> «STAND_U» — Стоит
-> «GUARD» — Стоит, руки за спиной
-> «WATCH» — Стоит, осматривается с винтовкой
-> «LEAN» — Стоит, операясь на стену с винтовкой
-> «LEAN_ON_TABLE» — стоит, руки на столе
-> «LISTEN_BRIEFING» — стоит, слушает
-> «BRIEFING» — Брифинг
-> «BRIEFING_POINT_RIGHT» — Брифинг, указывает на право
-> «BRIEFING_POINT_LEFT» — Брифинг, указывает на лево
-> «BRIEFING_POINT_TABLE» — Брифинг, тычит в тоблицу
-> «TALKING» — Соит, говорит
-> «KNEEL» — стоя на колене, с винтовкой
->»KNEEL_U» — стоя на колене
->»EXERCICE» — стоя на колене, оглядывается
-> «WAMUP» — Разминка, с винтовкой
-> «WAMUP_KNEEL» — Разминка, стоя на колене, с винтовкой
-> «WAMUP_P» — Разминка, с пистолетом
-> «WAMUP_KNEEL_P» — Разминка, стоя на коленях, с пистолетом
-> «WAMUP_U» — Разминка
-> «WAMUP_KNEEL_U» — Разминка, стоя на коленях
-> «SIT» — Сидит с винтовкой
-> «SIT_U» — Сидит
-> «SIT_LOW» — Сидит на земле, с винтовкой
-> «SIT_LOW_U» — Сидит на земле
-> «SIT_SAD» — Сидит и выглядит печально
-> «SIT_LOW_SAD» — Сидит на земле и выглядит печально
-> «SIT_HIGH1» — Сидит на на возвышенностях # 1
-> «SIT_HIGH2» — Сидит на на возвышенностях # 2
-> «SIT_AT_TABLE» — Сидит на стуле, руки на столе
-> «REPAIR_VEH_PRONE» — Лежит ремонтирует
-> «REPAIR_VEH_KNEEL» — Сидит ремонтирует
-> «REPAIR_VEH_STAND» — Соит ремонтирует
-> «CUFFED» — На земле, руки за спиной, может не реагировать
->»KNEEL_TREAT1″ — лечение ран # 1
-> «KNEEL_TREAT2» — лечение ран # 2
-> «PRONE_INJURED» — Ранен, с винтовкой и не реагирует
-> «PRONE_INJURED_U1» — Ранение # 1
-> «PRONE_INJURED_U2» — Ранение # 2
-> «DEAD» — Мертвое состояние, на земле
-> «DEAD_AT_WALL» — Мертвое состояние, на стене
+	> «STAND» — стоит с винтовкой
+	> «STAND_U» — Стоит
+	> «GUARD» — Стоит, руки за спиной
+	> «WATCH» — Стоит, осматривается с винтовкой
+	> «LEAN» — Стоит, операясь на стену с винтовкой
+	> «LEAN_ON_TABLE» — стоит, руки на столе
+	> «LISTEN_BRIEFING» — стоит, слушает
+
+	> «BRIEFING» — Брифинг
+	> «BRIEFING_POINT_RIGHT» — Брифинг, указывает на право
+	> «BRIEFING_POINT_LEFT» — Брифинг, указывает на лево
+	> «BRIEFING_POINT_TABLE» — Брифинг, тычит в тоблицу
+
+	> «TALKING» — Соит, говорит
+	> «KNEEL» — стоя на колене, с винтовкой
+	>»KNEEL_U» — стоя на колене
+	>»EXERCICE» — стоя на колене, оглядывается
+
+	> «WAMUP» — Разминка, с винтовкой
+	> «WAMUP_KNEEL» — Разминка, стоя на колене, с винтовкой
+	> «WAMUP_P» — Разминка, с пистолетом
+	> «WAMUP_KNEEL_P» — Разминка, стоя на коленях, с пистолетом
+	> «WAMUP_U» — Разминка
+	> «WAMUP_KNEEL_U» — Разминка, стоя на коленях
+
+	> «SIT» — Сидит с винтовкой
+	> «SIT_U» — Сидит
+	> «SIT_LOW» — Сидит на земле, с винтовкой
+	> «SIT_LOW_U» — Сидит на земле
+	> «SIT_SAD» — Сидит и выглядит печально
+	> «SIT_LOW_SAD» — Сидит на земле и выглядит печально
+	> «SIT_HIGH1» — Сидит на на возвышенностях # 1
+	> «SIT_HIGH2» — Сидит на на возвышенностях # 2
+	> «SIT_AT_TABLE» — Сидит на стуле, руки на столе
+
+	> «REPAIR_VEH_PRONE» — Лежит ремонтирует
+	> «REPAIR_VEH_KNEEL» — Сидит ремонтирует
+	> «REPAIR_VEH_STAND» — Соит ремонтирует
+
+	> «CUFFED» — На земле, руки за спиной, может не реагировать
+	>»KNEEL_TREAT1″ — лечение ран # 1
+	> «KNEEL_TREAT2» — лечение ран # 2
+	> «PRONE_INJURED» — Ранен, с винтовкой и не реагирует
+	> «PRONE_INJURED_U1» — Ранение # 1
+	> «PRONE_INJURED_U2» — Ранение # 2
+	> «DEAD» — Мертвое состояние, на земле
+	> «DEAD_AT_WALL» — Мертвое состояние, на стене
 
 
 		
@@ -70,12 +76,15 @@
 	None
 */
 
+
 //
 //	EARLY INIT
 //
-_origPos = getPosATL param [0] ;
+if (!isServer) exitWith {} ;
+
+_origPos = getPosASL param [0] ;
 _origDir = getDir param [0] ;
-param [0] enableSimulation false ;
+param [0] enableSimulationGlobal false ;
 
 waitUntil {time != 0} ;
 //
@@ -87,7 +96,8 @@ params [
 	["_smoothIn",true,[true]],
 	["_loadOption",-1,["",0]],
 	["_cond","false",[""]],
-	["_debug",false,[false]]
+	["_debug",true,[false]],
+	["_attachObj",objNull,[objNull]]
 ] ;
 _fnc_scriptName = "PLP_calmSoldier_3" ;
 #define CHATLOG(ANY)	if (_debug) then {systemChat str ANY} ;
@@ -97,15 +107,13 @@ if (typeName _anim == "ARRAY") then {
 	_anim = param [1] select 0 ;
 	_index = param [1] select 1 ;
 } ;
-if (typeName _loadOption == "STRING" and {_loadOption == "RANDOM"}) then {
-	_loadOption = -1 ;
-} ;
+_anim = toUpper _anim ;
 
 /*
-	0: Option
-	1: Weapon
+	0: Load Option
+	1: Weapon (false to remove rifle)
 	2: Pos-Dir Coef
-	3: Custom Condition (Overwride the normal condition)
+	3: Custom Condition (Overwrite the default condition)
 	4: In and out moves
 	5: Ignore out moves when the unit is killed
 	6: Custom Codes (Run at begin the execution)
@@ -120,12 +128,12 @@ if (typeName _loadOption == "STRING" and {_loadOption == "RANDOM"}) then {
 #define commonNon	"amovpercmstpsnonwnondnon"
 #define commonRfl	"amovpercmstpslowwrfldnon"
 
-switch (_anim) do {
+_data = call {
 	//
 	//	STAND
 	//
-	case "STAND" : {
-		_data = [
+	if (_anim isEqualTo "STAND") exitWith {
+		[
 			[
 				[
 					GETVALUE("STAND",0)
@@ -136,11 +144,11 @@ switch (_anim) do {
 			],
 			[0,[1,2]],
 			[4,["",commonRfl]]
-		] ;
+		]
 	} ;
-	case "STAND_U" : {
+	if (_anim isEqualTo "STAND_U") exitWith {
 		#define STNDSTR(NUM)	"AidlPercMstpSnonWnonDnon_G0"+str NUM
-		_data = [
+		[
 			[
 				[
 					GETVALUE("STAND_U1",0)
@@ -170,11 +178,11 @@ switch (_anim) do {
 			],
 			[0,[1,2]],
 			[1,false],
-			[4,["","AmovPercMstpSlowWnonDnon"]]
-		] ;
+			[4,["","AmovPercMstpSnonWnonDnon"]]
+		]
 	} ;
-	case "GUARD" : {
-		_data = [
+	if (_anim isEqualTo "GUARD") exitWith {
+		[
 			[
 				[
 					GETVALUE("GUARD",0)
@@ -183,10 +191,10 @@ switch (_anim) do {
 			[0,[3,2,2]],
 			[1,false],
 			[4,["","AmovPercMstpSlowWnonDnon"]]
-		] ;
+		]
 	} ;
-	case "WATCH" : {
-		_data = [
+	if (_anim isEqualTo "WATCH") exitWith {
+		[
 			[
 				[
 					GETVALUE("WATCH1",0)
@@ -197,10 +205,10 @@ switch (_anim) do {
 			],
 			[0,[3,2]],
 			[4,["",commonRfl]]
-		] ;
+		]
 	} ;
-	case "LEAN" : {
-		_data = [
+	if (_anim isEqualTo "LEAN") exitWith {
+		[
 			[
 				[
 					GETVALUE(_anim,0)
@@ -209,10 +217,10 @@ switch (_anim) do {
 			[0,[3,2]],
 			[2,[[0,0,0],-45]],
 			[4,["",commonRfl]]
-		] ;
+		]
 	} ;
-	case "LEAN_ON_TABLE" : {
-		_data = [
+	if (_anim isEqualTo "LEAN_ON_TABLE") exitWith {
+		[
 			[
 				[
 					GETVALUE(_anim,0)
@@ -221,10 +229,10 @@ switch (_anim) do {
 			[0,[2,2,1]],
 			[1,false],
 			[4,["",commonRfl]]
-		] ;
+		]
 	} ;
-	case "LISTEN_BRIEFING" : {
-		_data = [
+	if (_anim isEqualTo "LISTEN_BRIEFING") exitWith {
+		[
 			[
 				[
 					GETVALUE("LISTEN_BRIEFING",0)
@@ -233,10 +241,10 @@ switch (_anim) do {
 			[0,[3,2]],
 			[1,false],
 			[4,["",commonRfl]]
-		] ;
+		]
 	} ;
-	case "TALKING" : {
-		_data = [
+	if (_anim isEqualTo "TALKING") exitWith {
+		[
 			[
 				[
 					["acts_StandingSpeakingUnarmed"]
@@ -251,13 +259,15 @@ switch (_anim) do {
 			[0,[1,2]],
 			[1,false],
 			[4,["",commonNon]]
-		] ;
+		]
 	} ;
-	case "BRIEFING_POINT_LEFT" ;
-	case "BRIEFING_POINT_RIGHT" ;
-	case "BRIEFING_POINT_TABLE" ;
-	case "BRIEFING" : {
-		_data = [
+	if (
+		_anim isEqualTo "BRIEFING_POINT_LEFT" or
+		_anim isEqualTo "BRIEFING_POINT_RIGHT" or
+		_anim isEqualTo "BRIEFING_POINT_TABLE" or
+		_anim isEqualTo "BRIEFING"
+	) exitWith {
+		[
 			[
 				[
 					GETVALUE(_anim,0)
@@ -266,10 +276,10 @@ switch (_anim) do {
 			[0,[1,1,2]],
 			[1,false],
 			[4,["",commonNon]]
-		] ;
+		]
 	} ;
-	case "EXERCISE" : {
-		_data = [
+	if (_anim isEqualTo "EXERCISE") exitWith {
+		[
 			#define KNEBEN commonNon+"_exercisekneeBendA"
 			#define PUSHUP commonNon+"_exercisePushup"
 			[
@@ -289,7 +299,7 @@ switch (_anim) do {
 			[0,[1,1,2]],
 			[1,false],
 			[4,["",commonNon]]
-		] ;
+		]
 	} ;
 	
 	//
@@ -301,8 +311,8 @@ switch (_anim) do {
 	#define warmPAry(num) [[warmPStr+str num+"_loop"],[4,["",warmPStr+str num+"_out"]]]
 	#define	warmUStr "Acts_AidlPercMstpSnonWnonDnon_warmup_"
 	#define warmUAry(num) [[warmUStr+str num+"_loop"],[4,["",warmUStr+str num+"_out"]]]
-	case "WARMUP" : {
-		_data = [
+	if (_anim isEqualTo "WARMUP") exitWith {
+		[
 			[
 				[
 					[warmStr + "01",warmStr + "02",warmStr + "03",warmStr + "04",warmStr + "05"]
@@ -313,22 +323,21 @@ switch (_anim) do {
 				warmAry(4),
 				warmAry(5)
 			],
-			[0,[3,2]],
-			[4,["",commonRfl]]
-		] ;
+			[0,[3,2]]
+		]
 	} ;
-	case "WARMUP_KNEEL" : {
-		_data = [
+	if (_anim isEqualTo "WARMUP_KNEEL") exitWith {
+		[
 			[
 				warmAry(6),
 				warmAry(7),
 				warmAry(8)
 			],
 			[0,[3,2]]
-		] ;
+		]
 	} ;
-	case "WARMUP_P" : {
-		_data = [
+	if (_anim isEqualTo "WARMUP_P") exitWith {
+		[
 			[
 				warmPAry(1),
 				warmPAry(2),
@@ -339,18 +348,18 @@ switch (_anim) do {
 				warmPAry(8)
 			],
 			[0,[3,2]]
-		] ;
+		]
 	} ;
-	case "WARMUP_KNEEL_P" : {
-		_data = [
+	if (_anim isEqualTo "WARMUP_KNEEL_P") exitWith {
+		[
 			[
 				warmPAry(4)
 			],
 			[0,[3,2]]
-		] ;
+		]
 	} ;
-	case "WARMUP_U" : {
-		_data = [
+	if (_anim isEqualTo "WARMUP_U") exitWith {
+		[
 			[
 				warmUAry(1),
 				warmUAry(2),
@@ -360,11 +369,11 @@ switch (_anim) do {
 			],
 			[0,[3,2]],
 			[1,false]
-		] ;
+		]
 	} ;
-	case "WARMUP_KNEEL_U" : {
+	if (_anim isEqualTo "WARMUP_KNEEL_U") exitWith {
 		#define WARMSTR "Acts_AidlPercMstpSnonWnonDnon_warmup"
-		_data = [
+		[
 			[
 				warmUAry(4),
 				warmUAry(5),
@@ -372,14 +381,14 @@ switch (_anim) do {
 			],
 			[0,[3,2]],
 			[1,false]
-		] ;
+		]
 	} ;
 	
 	//
 	//	SIT
 	//
-	case "SIT" : {
-		_data = [
+	if (_anim isEqualTo "SIT") exitWith {
+		[
 			[
 				[
 					GETVALUE("SIT1",0)
@@ -393,11 +402,12 @@ switch (_anim) do {
 			],
 			[0,[1,2]],
 			[2,[[0,0,-0.5],-0]],
-			[4,["","AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow"]]
-		] ;
+			[4,["","AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow"]],
+			[8,{_this setPosATL (_this modelToWorld [0,0.5,0])}]
+		]
 	} ;
-	case "SIT_U" : {
-		_data = [
+	if (_anim isEqualTo "SIT_U") exitWith {
+		[
 			[
 				[
 					GETVALUE("SIT_U1",0)
@@ -413,10 +423,13 @@ switch (_anim) do {
 			[1,false],
 			[2,[[0,0,-0.5],-0]],
 			[4,["","AcrgPknlMstpSnonWnonDnon_"+commonNon+"_getOutLow"]]
-		] ;
+		]
 	} ;
-	case "SIT_HIGH" : {
-		_data = [
+	if (
+		_anim isEqualTo "SIT_HIGH" or
+		_anim isEqualTo "SIT_HIGH1"
+	) exitWith {
+		[
 			[
 				[
 					GETVALUE("SIT_HIGH1",0)
@@ -425,10 +438,10 @@ switch (_anim) do {
 			[0,[1,2]],
 			[2,[[0,0,-0.6],140]],
 			[4,["","AcrgPknlMstpSnonWnonDnon_AmovPercMstpSrasWrflDnon_getOutLow"]]
-		] ;
+		]
 	} ;
-	case "SIT_HIGH2" : {
-		_data = [
+	if (_anim isEqualTo "SIT_HIGH2") exitWith {
+		[
 			[
 				[
 					GETVALUE("SIT_HIGH2",0)
@@ -451,13 +464,15 @@ switch (_anim) do {
 				waitUntil {animationState _this != "HubSittingHighB_out"} ;
 				_this removeEventHandler ["AnimDone",_EH] ;
 			}]
-		] ;
+		]
 	} ;
-	case "SIT_LOW_U" ;
-	case "SIT_LOW" : {
+	if (
+		_anim isEqualTo "SIT_LOW_U" or
+		_anim isEqualTo "SIT_LOW"
+	) exitWith {
 		#define	commonSit	"amovpsitmstpslowwrfldnon"
 		#define	commFlat	"passenger_flatground_"
-		_data = [
+		[
 			[
 				[
 					GETVALUE("SIT_LOW",0) - [commonSit],
@@ -482,13 +497,13 @@ switch (_anim) do {
 				]
 			],
 			[0,[1,1,2]],
-			[1,if (_anim == "SIT_LOW_U") then {false} else {true}],
-			[4,["",if (_anim == "SIT_LOW_U") then {"AmovPsitMstpSnonWnonDnon_"+commonNon+"_ground"} else {commonSit+"_"+commonRfl}]]
-		] ;
+			[1,(_anim isEqualTo "SIT_LOW")],
+			[4,["",[commonSit+"_"+commonRfl,"AmovPsitMstpSnonWnonDnon_"+commonNon+"_ground"] select (_anim == "SIT_LOW_U")]]
+		]
 	} ;
-	case "SIT_LOW_U" : {
+	if (_anim isEqualTo "SIT_LOW_U") exitWith {
 		#define	commFlatGen(NUM)	[["passenger_flatground_generic0"+str NUM]]
-		_data = [
+		[
 			[
 				[
 					GETVALUE("SIT_LOW_U",0),
@@ -503,12 +518,14 @@ switch (_anim) do {
 			[0,[1,1,2]],
 			[1,false],
 			[4,["","AmovPsitMstpSnonWnonDnon_"+commonNon+"_ground"]]
-		] ;
+		]
 	} ;
-	case "SIT_SAD1" ;
-	case "SIT_SAD2" ;
-	case "SIT_SAD" : {
-		_data = [
+	if (
+		_anim isEqualTo "SIT_SAD1" or
+		_anim isEqualTo "SIT_SAD2" or
+		_anim isEqualTo "SIT_SAD"
+	) exitWith {
+		[
 			[
 				[
 					GETVALUE("SIT_SAD1",0)
@@ -521,10 +538,10 @@ switch (_anim) do {
 			[1,false],
 			[2,[[0,0,-0.3],180]],
 			[4,["","AcrgPknlMstpSnonWnonDnon_"+commonNon+"_getOutLow"]]
-		] ;
+		]
 	} ;
-	case "SIT_LOW_SAD" : {
-		_data = [
+	if (_anim isEqualTo "SIT_LOW_SAD") exitWith {
+		[
 			[
 				[
 					["Acts_CivilShocked_1"]
@@ -536,11 +553,11 @@ switch (_anim) do {
 			[0,[1,1,2]],
 			[1,false],
 			[4,["","AmovPsitMstpSnonWnonDnon_"+commonNon+"_ground"]]
-		] ;
+		]
 	} ;
 
-	case "SIT_AT_TABLE" : {
-		_data = [
+	if (_anim isEqualTo "SIT_AT_TABLE") exitWith {
+		[
 			[
 				[
 					GETVALUE("SIT_AT_TABLE",0)
@@ -550,15 +567,15 @@ switch (_anim) do {
 			[1,false],
 			[2,[[0,0,-0.5],0]],
 			[4,["","AcrgPknlMstpSnonWnonDnon_"+commonNon+"_getOutLow"]]
-		] ;
+		]
 	} ;
 	
 	//
 	//	KNEEL
 	//
-	case "KNEEL" : {
+	if (_anim isEqualTo "KNEEL") exitWith {
 		#define KNLSTR "AidlPknlMstpSlowWrflDnon_G0"
-		_data = [
+		[
 			[
 				[
 					[KNLSTR + "1",KNLSTR + "2",KNLSTR + "3"]
@@ -568,9 +585,9 @@ switch (_anim) do {
 			[4,["AmovPknlMstpSlowWrflDnon","AmovPknlMstpSlowWrflDnon"]]
 		]
 	} ;	
-	case "KNEEL_U" : {
+	if (_anim isEqualTo "KNEEL_U") exitWith {
 		#define KNLSTR "AidlPknlMstpSnonWnonDnon_G0"
-		_data = [
+		[
 			[
 				[
 					[KNLSTR + "1",KNLSTR + "2",KNLSTR + "3"]
@@ -585,8 +602,8 @@ switch (_anim) do {
 	//
 	//	REPAIR VEHICLE
 	//
-	case "REPAIR_VEH_PRONE" : {
-		_data = [
+	if (_anim isEqualTo "REPAIR_VEH_PRONE") exitWith {
+		[
 			[
 				[
 					GETVALUE("REPAIR_VEH_PRONE",0)
@@ -599,8 +616,8 @@ switch (_anim) do {
 			[8,{_this playMove "AmovPpneMstpSnonWnonDnon"}]
 		]
 	} ;
-	case "REPAIR_VEH_KNEEL" : {
-		_data = [
+	if (_anim isEqualTo "REPAIR_VEH_KNEEL") exitWith {
+		[
 			[
 				[
 					GETVALUE("REPAIR_VEH_KNEEL",0)
@@ -611,8 +628,8 @@ switch (_anim) do {
 			[4,["","AmovPknlMstpSnonWnonDnon"]]
 		]
 	} ;
-	case "REPAIR_VEH_STAND" : {
-		_data = [
+	if (_anim isEqualTo "REPAIR_VEH_STAND") exitWith {
+		[
 			[
 				[
 					GETVALUE("REPAIR_VEH_STAND",0)
@@ -624,8 +641,8 @@ switch (_anim) do {
 		]
 	} ;
 	
-	case "CUFFED" : {
-		_data = [
+	if (_anim isEqualTo "CUFFED") exitWith {
+		[
 			#define	cuffStr "Acts_AidlPsitMstpSsurWnonDnon"
 			[
 				[
@@ -636,14 +653,18 @@ switch (_anim) do {
 			[1,false],
 			[4,["",cuffStr+"_out"]],
 			[3,{!alive _unit or {_unit getVariable ["PLP_calmSoldier_abort",false]}}]
-		] ;
+		]
 	} ;
 	
 	//
 	//	INJURED HEALING AND DEAD STATES
 	//
-	case "PRONE_INJURED" : {
-		_data = [
+	if (
+		_anim isEqualTo "PRONE_INJURED_U1" or
+		_anim isEqualTo "PRONE_INJURED_U2" or
+		_anim isEqualTo "PRONE_INJURED"
+	) exitWith {
+		[
 			[
 				[
 					GETVALUE("PRONE_INJURED",0)
@@ -658,30 +679,31 @@ switch (_anim) do {
 			[3,{!alive _unit}],
 			[4,["",""]],
 			[6,{_this setHitPointDamage ["HitBody",0.5]}]
-		] ;
+		]
 	} ;
-	case "PRONE_INJURED_AGONY" : {
-			_data = [
+	if (_anim isEqualTo "PRONE_INJURED_AGONY") exitWith {
+		#define HITPART(PART)	[6,{_this setHitPointDamage [PART,0.5]}]
+		[
 			[
 				[
 					["Acts_CivilInjuredArms_1"],
-					[6,{_this setHitPointDamage ["HitArms",0.5]}]
+					HITPART("HitArms")
 				],
 				[
 					["Acts_CivilInjuredChest_1"],
-					[6,{_this setHitPointDamage ["HitBody",0.5]}]
+					HITPART("HitBody")
 				],
 				[
 					["Acts_CivilInjuredGeneral_1"],
-					[6,{_this setHitPointDamage ["HitAbdomen",0.5]}]
+					HITPART("HitAbdomen")
 				],
 				[
 					["Acts_CivilInjuredHead_1"],
-					[6,{_this setHitPointDamage ["HitFace",0.5]}]
+					HITPART("HitFace")
 				],
 				[
 					["Acts_CivilInjuredLegs_1"],
-					[6,{_this setHitPointDamage ["HitLegs",0.5]}]
+					HITPART("HitLegs")
 				]
 			],
 			[0,[1,2]],
@@ -689,11 +711,14 @@ switch (_anim) do {
 			[2,[[0,0,0],180]],
 			[3,{!alive _unit}],
 			[4,["",""]]
-		] ;
+		]
 	} ;
-	case "KNEEL_TREAT_U" ;
-	case "KNEEL_TREAT" : {
-		_data = [
+	if (
+		_anim isEqualTo "KNEEL_TREAT_U" or
+		_anim isEqualTo "KNEEL_TREAT1" or
+		_anim isEqualTo "KNEEL_TREAT"
+	) exitWith {
+		[
 			[
 				[
 					GETVALUE("KNEEL_TREAT",0)
@@ -704,8 +729,8 @@ switch (_anim) do {
 			[4,["AinvPknlMstpSnonWnonDnon_AinvPknlMstpSnonWnonDnon_medic","AinvPknlMstpSnonWnonDnon_medicEnd"]]
 		]
 	} ;
-	case "KNEEL_TREAT2" : {
-		_data = [
+	if (_anim isEqualTo "KNEEL_TREAT2") exitWith {
+		[
 			[
 				[
 					GETVALUE("KNEEL_TREAT2",0)
@@ -715,8 +740,8 @@ switch (_anim) do {
 			[4,["Acts_TreatingWounded_in","Acts_TreatingWounded_out"]]
 		]
 	} ;
-	case "DEAD" : {
-		_data = [
+	if (_anim isEqualTo "DEAD") exitWith {
+		[
 			[
 				[
 					["KIA_gunner_standup01","KIA_gunner_static_low01","KIA_passenger_injured_medevac_truck03"]
@@ -727,10 +752,10 @@ switch (_anim) do {
 			[4,["",""]],
 			[6,{_this setHitPointDamage ["HitBody",1] ; _this setHitPointDamage ["HitHead",1]}],
 			[7,true]
-		] ;
+		]
 	} ;
-	case "DEAD_AT_WALL" : {
-		_data = [
+	if (_anim isEqualTo "DEAD_AT_WALL") exitWith {
+		[
 			[
 				[
 					["KIA_commander_sdv"]
@@ -756,18 +781,17 @@ switch (_anim) do {
 			[4,["",""]],
 			[6,{_this setHitPointDamage ["HitBody",1] ; _this setHitPointDamage ["HitHead",1]}],
 			[7,true]
-		] ;
+		]
 	} ;
-	case default {
-		["%1 is not available paramater",_anim] call BIS_fnc_error ;
-	} ;
+	["%1 is not available paramater",_anim] call BIS_fnc_error ;
+	nil
 } ;
 if (isNil "_data") exitWith {} ;	//TERMINATE THE SCRIPT WHEN DATA IS NOT DEFINED
 
 //	-----------------------------------
 //	PRE-EXECUTION: INITIALIZATION
 //	-----------------------------------
-private ["_lastData","_anim","_inMove","_outMove","_hasWeapon","_attachObj","_direction","_position","_condition","_ignoreAnim","_unreact","_afterExec"] ;
+private ["_lastData","_anim","_inMove","_outMove","_hasWeapon","_direction","_position","_condition","_ignoreAnim","_unreact","_afterExec"] ;
 
 if (!isNil "_index") then {
 	_lastData = (_data select 0) select _index ;
@@ -779,24 +803,40 @@ _data deleteAt 0 ;
 _anim = _lastData select 0 ;
 _lastData = (_lastData + _data) ;
 
+//	Normalize _loadOption before use
+switch _loadOption do {
+	case "ASIS" : {
+		_loadOption = 4 ;
+	} ;
+	case "LIGHT" : {
+		_loadOption = 1 ;
+	} ;
+	case "MEDIUM" : {
+		_loadOption = 2 ;
+	} ;
+	case "FULL" : {
+		_loadOption = 3 ;
+	} ;
+} ;
+
 {	//	Bring datas from selected animation data
 	if (_forEachIndex >= 1) then {
 		_x params [
 			"_index",
 			"_value"
 		] ;
-		switch _index do {
-			case 0 : {
+		call {
+			if (_index == 0) exitWith {
 				if (_loadOption == -1) then {
 					_loadOption = (selectRandom _value) ;
 				} ;
 			} ;
-			case 1 : {
+			if (_index == 1) exitWith {
 				if (!_value) then {
 					_unit removeWeapon primaryWeapon _unit ;
 				} ;
 			} ;
-			case 2 : {
+			if (_index == 2) exitWith {
 				_value params [
 					"_pos",
 					"_dir"
@@ -804,29 +844,28 @@ _lastData = (_lastData + _data) ;
 				_position = _pos ;
 				_direction = _dir ;
 			} ;
-			case 3 : {
+			if (_index == 3) exitWith {
 				if (isNil "_condition") then {
 					_condition = _value ;
-				} ;
-			} ;
-			case 4 : {
+				} ;} ;
+			if (_index == 4) exitWith {
 				_inMove = (_value select 0) ;
 				_outMove = (_value select 1) ;
 			} ;
-			case 5 : {
+			if (_index == 5) exitWith {
 				_ignoreAnim = _value ;
 			} ;
-			case 6 : {
+			if (_index == 6) exitWith {
 				if (typeName _value == "CODE") then {
 					_unit spawn _value ;
 				} else {
 					[_unit,(_value param [1])] spawn (_value param [0])
 				} ;
 			} ;
-			case 7 : {
+			if (_index == 7) exitWith {
 				_unreact = _value ;
 			} ;
-			case 8 : {
+			if (_index == 8) exitWith {
 				_afterExec = _value ;
 			} ;
 		} ;
@@ -836,9 +875,6 @@ _lastData = (_lastData + _data) ;
 //	-----------------------------------
 //	SET DEFAULT IF THE VALUES NOT DEFINED
 //	-----------------------------------
-if (isNil "_loadOption") then {
-	_loadOption = 2 ;
-} ;
 if (isNil "_hasWeapon") then {
 	_hasWeapon = true ;
 } ;
@@ -849,7 +885,7 @@ if (isNil "_direction") then {
 	_direction = 0 ;
 } ;
 if (isNil "_condition") then {
-	_condition = {!alive _unit or {getSuppression _unit != 0} or {_unit getVariable ["PLP_calmSoldier_abort",false]} or {_unit call BIS_fnc_enemyDetected}} ;
+	_condition = {!alive _unit or {unitReady _unit} or {getSuppression _unit != 0} or {_unit getVariable ["PLP_calmSoldier_abort",false]} or {_unit call BIS_fnc_enemyDetected}} ;
 } ;
 if (isNil "_inMove" or {isNil "_outMove"}) then {
 	_inMove = "Stand" ;
@@ -869,20 +905,6 @@ if (isNil "_ignoreAnim") then {
 if (!_hasWeapon) then {
 	_unit removeWeapon primaryWeapon _unit ;
 } ;
-switch _loadOption do {
-	case "ASIS" : {
-		_loadOption = 4 ;
-	} ;
-	case "LIGHT" : {
-		_loadOption = 1 ;
-	} ;
-	case "MEDIUM" : {
-		_loadOption = 2 ;
-	} ;
-	case "FULL" : {
-		_loadOption = 3 ;
-	} ;
-} ;
 
 if (_loadOption <= 3) then {
 	_unit unassignItem hmd _unit ;
@@ -897,22 +919,26 @@ if (_loadOption <= 1) then {
 } ;
 
 //	Attach the unit
-if (count (synchronizedObjects _unit) != 0) then {
-	_attachObj = ((synchronizedObjects _unit) select 0) ;
+
+if (count (synchronizedObjects _unit) != 0 or !isNull _attachObj) then {
+	if (isNull _attachObj) then {
+		_attachObj = ((synchronizedObjects _unit) select 0) ;
+	} ;
 	_vehDir = getDir _attachObj ;
 	_unit attachTo [_attachObj,(_attachObj worldToModel getPosATL _unit) vectorAdd _position] ;
 	_unit setDir ((_origDir - _vehDir) + _direction) ;
 } else {
-	_attachDummy = "Logic" createVehicleLocal [0,0,0] ;
-	_unit setPosATL _origPos ;
+	_logicGrp = createGroup side _unit ;
+	_attachDummy = _logicGrp createUnit ["Logic",[0,0,0],[],0,"CAN_COLLIDE"] ;
+	_unit setPosASL _origPos ;
 	_unit setDir _origDir ;
 	_attachDummy setPosATL (_unit modelToWorld _position) ;
-	_attachDummy setDir getDir _unit ;
+	_attachDummy setDir _origDir ;
 	_unit attachTo [_attachDummy,[0,0,0]] ;
 	_unit setDir _direction ;
 } ;
 
-param [0] enableSimulation true ;
+_unit enableSimulationGlobal true ;
 if (!isNil "_unreact" and {_unreact}) exitWith {
 	_unit disableConversation true ;
 	SWITCHMOVE_MP(selectRandom _anim) ;
@@ -932,6 +958,7 @@ _unitEHDone = _unit addEventHandler ["AnimDone",{
 
 //	Make AI stop and start move
 _unit setBehaviour "SAFE" ;
+doStop _unit ;
 {_unit disableAI _x} forEach ["MOVE","TARGET","AUTOTARGET","ANIM","FSM"] ;
 if (_smoothIn and {_inMove != ""}) then {
 	SWITCHMOVE_MP(_inMove) ;
@@ -945,52 +972,19 @@ _unit setAnimSpeedCoef (0.8 + random 0.4) ;
 	_x = nil ;
 } forEach [_data,_inMove,_loadOption,_hasWeapon,_direction] ;
 
-//	Main part
-while {true} do {
-	_nowCoef = (_unit getVariable "PLP_calmSoldier_animDoneCoef") ;
-	waitUntil {[] call _condition or {!alive _unit} or {_nowCoef != (_unit getVariable "PLP_calmSoldier_animDoneCoef")}} ;
-	if ([] call _condition) exitWith {} ;
-	SWITCHMOVE_MP(selectRandom _anim) ;
-} ;
-CHATLOG((str param [1]) + " ended")
-//	-----------------------------------
-//	POST-EXECUTION: LEAVE THE ANIMATION
-//	-----------------------------------
-
-if (alive _unit) then {
-	sleep (0.05 + random 0.2) ;
-	_unit setDir 0 ;
-	if (!isNil "_attachDummy") then {
-		_attachDummy setPosATL (_attachDummy modelToWorld (_position vectorMultiply -1)) ;
-		waitUntil {getDir _attachDummy == getDir _unit} ;
-	} ;
-} ;
-
-CHATLOG("detach sequence")
-detach _unit ;
-if (!isNil "_attachDummy") then {
-	deleteVehicle _attachDummy ;
-} ;
-_unit setBehaviour "AWARE" ;
-{_unit enableAI _x} forEach ["MOVE","TARGET","AUTOTARGET","ANIM","FSM"] ;
-
-if (!isNil "_afterExec") then {
-	_unit spawn _afterExec ;
-} ;
-
 //	Find loop and out
 _loopAnim = "" ;
 _playMove = false ;
 #define 	ANIMBASE(ANIM)	((getArray (configfile >> "CfgMovesMaleSdr" >> "States" >> ANIM >> "InterpolateTo")) + (getArray (configfile >> "CfgMovesMaleSdr" >> "States" >> ANIM >> "ConnectTo")))
 {
 	if ((typeName _x == "STRING") and {(_x find _outMove != -1) or {(_x find "_loop") != -1}}) exitWith {
-		if (toUpper _x find toUpper _outMove != -1) then {
+		if (toUpper _x isEqualTo toUpper _outMove) then {
 			_playMove = true ;
 		} else {
 			_loopAnim = _x ;
 			{
-				if (typename _x == "STRING") then {
-					if (toUpper _x find toUpper _outMove != -1) exitWith {
+				if (typename _x isEqualTo "STRING") then {
+					if (toUpper _x isEqualTo toUpper _outMove) exitWith {
 						_playMove = true ;
 					} ;
 				}
@@ -999,15 +993,55 @@ _playMove = false ;
 	}
 } forEach ANIMBASE(animationState _unit) ;
 
+//	Main part
+while {true} do {
+	_nowCoef = (_unit getVariable "PLP_calmSoldier_animDoneCoef") ;
+	waitUntil {call _condition or {!alive _unit} or {_nowCoef != (_unit getVariable "PLP_calmSoldier_animDoneCoef")}} ;
+	if (call _condition) exitWith {} ;
+	SWITCHMOVE_MP(selectRandom _anim) ;
+} ;
+CHATLOG((str param [1]) + " ended")
+//	-----------------------------------
+//	POST-EXECUTION: LEAVE THE ANIMATION
+//	-----------------------------------
+
+CHATLOG("detach sequence")
+
+if (alive _unit) then {
+	sleep (0.1 + random 0.4) ;
+	_unit setDir 0 ;
+	if (!isNil "_attachDummy") then {
+		_attachDummy setPosATL (_attachDummy modelToWorld (_position vectorMultiply -1)) ;
+		waitUntil {getDir _attachDummy == getDir _unit} ;
+	} ;
+} ;
+
+detach _unit ;
+if (!isNil "_attachDummy") then {
+	deleteVehicle _attachDummy ;
+} ;
+
+if (!isNil "_afterExec") then {
+	_unit spawn _afterExec ;
+} ;
+
 if (alive _unit or {!_ignoreAnim}) then {
 	if (_playMove) then {
+		CHATLOG("playMove")
 		PLAYMOVENOW_MP(_loopAnim) ;
 		PLAYMOVENOW_MP(_outMove) ;
 	} else {
+		CHATLOG("switchMove")
 		SWITCHMOVE_MP(_outMove) ;
 	} ;
-	_nowCoef = (_unit getVariable "PLP_calmSoldier_animDoneCoef") ;
-	waitUntil {_nowCoef != (_unit getVariable "PLP_calmSoldier_animDoneCoef")} ;
+	//_nowCoef = (_unit getVariable "PLP_calmSoldier_animDoneCoef") ;
+	//waitUntil {_nowCoef != (_unit getVariable "PLP_calmSoldier_animDoneCoef")} ;
+} ;
+
+_unit setBehaviour "AWARE" ;
+{_unit enableAI _x} forEach ["MOVE","TARGET","AUTOTARGET","ANIM","FSM"] ;
+if !(formationLeader _unit isEqualTo leader _unit) then {
+	_unit doFollow leader _unit ;
 } ;
 
 _unit setAnimSpeedCoef 1 ;

@@ -6,9 +6,6 @@
 // Выход если зашел во время игры
 if (didJIP) exitWith {["ifa3_camp_tiger_debrif_loser_jip",false,false] call BIS_fnc_endMission;};
 
-// Прогрузка скрипта патрулирования
-//_upsmon = [] spawn {call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\Init_UPSMON.sqf";};
-
 "dynamicBlur" ppEffectEnable true;
 "dynamicBlur" ppEffectAdjust [6]; 
 "dynamicBlur" ppEffectCommit 0;  
@@ -20,6 +17,7 @@ if (didJIP) exitWith {["ifa3_camp_tiger_debrif_loser_jip",false,false] call BIS_
 playmusic "ifa3_tiger_m_intro";
 
 // Переменные
+konez_dialog_start=false;
 kolona_priehala=false;
 task2_pos=false;
 task3_pos=false;
@@ -33,10 +31,7 @@ tanki_box=[tank1,tank2,tank3];
 
 _player_ammo = [] spawn {
 s1 call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s1.sqf";
-s2 call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s2.sqf";
-s3 call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s2.sqf";
-s4 call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s2.sqf";
-s5 call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s2.sqf";
+{_x call compile preprocessFileLineNumbers "ifa3_camp_tiger\f\w\s2.sqf";} foreach [s2,s3,s4,s5];
 };
 
 s1 setIdentity "ifa3_tiger_pers_s1";
@@ -64,7 +59,6 @@ t1_1 kbAddTopic ["briefing", "ifa3_camp_tiger\f\briefing.bikb", ""];
 
 // Брифинг
 player createDiaryRecord ["Diary", [localize "STR_ifa3_tiger_1_mis_plan1", localize "STR_ifa3_tiger_1_mis_plan1_1"]];
-player createDiaryRecord ["Diary", [localize "STRD_ifa3lib_tank_peredacha_init", localize "STRD_ifa3lib_tank_peredacha"]];
 
 // 1 задание
 task1 = player createSimpleTask [localize "STR_ifa3_tiger_1_mis_task1"];
@@ -88,9 +82,9 @@ enableSaving [false, false];
 
 sleep 2;
 
-// Скрипт коробки передач и запрет снятие униформы
-if (isMultiplayer) then {_nul=execVM "ifa3_camp_tiger\f\Peredacha.sqf"};
-_nul=execVM "ifa3_camp_tiger\f\nouniforminit.sqf";
+// запрет снятие униформы
+[]execVM "ifa3_camp_tiger\f\nouniforminit.sqf";
+[]execVM "map.sqf";
 
 2 fadesound 0.1;
 
@@ -108,10 +102,10 @@ sleep 3;
 _dialog = [] spawn {
 setAccTime 1;
 s2 kbTell [s1, "briefing", "STR_ifa3_tiger_mis1_say1",true];
-sleep 3;
+sleep 1;
 setAccTime 1;
 s1 kbTell [s2, "briefing", "STR_ifa3_tiger_mis1_say2",true];
-sleep 3;
+sleep 2;
 setAccTime 1;
 s2 kbTell [s1, "briefing", "STR_ifa3_tiger_mis1_say3",true];
 sleep 3;
@@ -123,18 +117,19 @@ s5 kbTell [s3, "briefing", "STR_ifa3_tiger_mis1_say5",true];
 sleep 3;
 setAccTime 1;
 s3 kbTell [s5, "briefing", "STR_ifa3_tiger_mis1_say6",true];
-sleep 3;
+sleep 8;
 setAccTime 1;
 s1 kbTell [s5, "briefing", "STR_ifa3_tiger_mis1_say7",true];
-sleep 3;
+sleep 1;
 setAccTime 1;
 s1 kbTell [t1_1, "briefing", "STR_ifa3_tiger_mis1_say8",true];
-sleep 3;
+sleep 11;
 2 fademusic 1;
+konez_dialog_start=true;
 };
 
 // Ждем когда доедем и меняем сцену
-waitUntil {kolona_priehala};
+waitUntil {kolona_priehala and konez_dialog_start};
 setAccTime 1;
 {doStop _x} foreach [s3,t1_3,t2_3];
 if (isMultiplayer) then {tank3 setFuel 0};
@@ -232,64 +227,44 @@ sleep 1;
 dialog2 = [] spawn {
 setAccTime 1;
 radio say3d "ifa3_tiger_s_morze";
-setAccTime 1;
-_say = [s5,"STR_ifa3_tiger_mis1_say9","STR_ifa3_tiger_mis1_say9",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[s5,"STR_ifa3_tiger_mis1_say9","STR_ifa3_tiger_mis1_say9",5] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 5;
+[s2,"STR_ifa3_tiger_mis1_say10","STR_ifa3_tiger_mis1_say10",5] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 5;
+[s1,"STR_ifa3_tiger_mis1_say11","STR_ifa3_tiger_mis1_say11",1] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 1;
+[s5,"STR_ifa3_tiger_mis1_say12","STR_ifa3_tiger_mis1_say12",5] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 5;
+[s4,"STR_ifa3_tiger_mis1_say13","STR_ifa3_tiger_mis1_say13",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s2,"STR_ifa3_tiger_mis1_say14","STR_ifa3_tiger_mis1_say14",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
 sleep 3;
-setAccTime 1;
-_say = [s2,"STR_ifa3_tiger_mis1_say10","STR_ifa3_tiger_mis1_say10",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[s5,"STR_ifa3_tiger_mis1_say15","STR_ifa3_tiger_mis1_say15",5] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 5;
+[s2,"STR_ifa3_tiger_mis1_say16","STR_ifa3_tiger_mis1_say16",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s1,"STR_ifa3_tiger_mis1_say17","STR_ifa3_tiger_mis1_say17",9] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 9;
+[s4,"STR_ifa3_tiger_mis1_say17_1","STR_ifa3_tiger_mis1_say17_1",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s2,"STR_ifa3_tiger_mis1_say18","STR_ifa3_tiger_mis1_say18",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
 sleep 3;
-setAccTime 1;
-_say = [s1,"STR_ifa3_tiger_mis1_say11","STR_ifa3_tiger_mis1_say11",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s5,"STR_ifa3_tiger_mis1_say12","STR_ifa3_tiger_mis1_say12",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s4,"STR_ifa3_tiger_mis1_say13","STR_ifa3_tiger_mis1_say13",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s2,"STR_ifa3_tiger_mis1_say14","STR_ifa3_tiger_mis1_say14",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s5,"STR_ifa3_tiger_mis1_say15","STR_ifa3_tiger_mis1_say15",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s2,"STR_ifa3_tiger_mis1_say16","STR_ifa3_tiger_mis1_say16",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s1,"STR_ifa3_tiger_mis1_say17","STR_ifa3_tiger_mis1_say17",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s4,"STR_ifa3_tiger_mis1_say17_1","STR_ifa3_tiger_mis1_say17_1",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s2,"STR_ifa3_tiger_mis1_say18","STR_ifa3_tiger_mis1_say18",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s1,"STR_ifa3_tiger_mis1_say19","STR_ifa3_tiger_mis1_say19",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s4,"STR_ifa3_tiger_mis1_say20","STR_ifa3_tiger_mis1_say20",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s1,"STR_ifa3_tiger_mis1_say21","STR_ifa3_tiger_mis1_say21",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s3,"STR_ifa3_tiger_mis1_say22","STR_ifa3_tiger_mis1_say22",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s5,"STR_ifa3_tiger_mis1_say23","STR_ifa3_tiger_mis1_say23",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s4,"STR_ifa3_tiger_mis1_say24","STR_ifa3_tiger_mis1_say24",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s1,"STR_ifa3_tiger_mis1_say25","STR_ifa3_tiger_mis1_say25",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
-_say = [s2,"STR_ifa3_tiger_mis1_say26","STR_ifa3_tiger_mis1_say26",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-setAccTime 1;
+[s1,"STR_ifa3_tiger_mis1_say19","STR_ifa3_tiger_mis1_say19",13] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 13;
+[s4,"STR_ifa3_tiger_mis1_say20","STR_ifa3_tiger_mis1_say20",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s1,"STR_ifa3_tiger_mis1_say21","STR_ifa3_tiger_mis1_say21",16] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 16;
+[s3,"STR_ifa3_tiger_mis1_say22","STR_ifa3_tiger_mis1_say22",1] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 1;
+[s5,"STR_ifa3_tiger_mis1_say23","STR_ifa3_tiger_mis1_say23",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 4;
+[s4,"STR_ifa3_tiger_mis1_say24","STR_ifa3_tiger_mis1_say24",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s1,"STR_ifa3_tiger_mis1_say25","STR_ifa3_tiger_mis1_say25",1] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 1;
+[s2,"STR_ifa3_tiger_mis1_say26","STR_ifa3_tiger_mis1_say26",6] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 6;
 konez_dialog2=true;
 };
 
@@ -419,20 +394,6 @@ _wp2 setWaypointFormation "LINE";
 _wp2 setWaypointStatements ["true", "{deleteVehicle _x} foreach units this"];
 };
 
-// Возможность взять карту Британцев
-karta_brit_fnx = [] spawn {
-// Ждем когда подойдем к картеь
-waitUntil {(player distance karta1 < 2) or (player distance karta2 < 2)};
-karta_brit_mark = player addAction [localize "STR_ifa3_tiger_1_mis_action2", {
-{
-player removeAction karta_brit_mark;
-{deleteVehicle _x} foreach [karta1,karta2];
-// Увеличиваем маркера
-{_x setMarkerSize [1.5,1.5]} foreach ["brit_mar_1","brit_mar_2","brit_mar_3","brit_mar_4","brit_mar_5","brit_mar_6","brit_mar_7","brit_mar_8","brit_mar_9","brit_mar_10","brit_mar_11","brit_mar_12","brit_mar_13","brit_mar_14","brit_mar_15","brit_mar_16","brit_mar_17","brit_mar_18"];
-terminate karta_brit_fnx;
-} remoteExec ["bis_fnc_call", 0];
-}];
-};
 
 // Выполнение 2 задачи уничтожение радио
 _task2 = [] spawn {

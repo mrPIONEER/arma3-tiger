@@ -27,7 +27,7 @@ s4 setIdentity "ifa3_tiger_pers_s4";
 s5 setIdentity "ifa3_tiger_pers_s5";
 s1 setGroupId [localize "STR_ifa3_tiger_radio_st1","GroupColor0"];
 {_x kbAddTopic ["briefing", "ifa3_camp_tiger\f\briefing.bikb", ""]} forEach player_box;
-_mar = [tank1,"tank1"] execVM "ifa3_camp_tiger\f\gomarker.sqf";
+[tank1,"tank1"] execVM "ifa3_camp_tiger\f\gomarker.sqf";
 {_x allowDamage false} forEach player_box;
 {_x allowDamage false} forEach tank2_unit;
 of allowDamage false;
@@ -52,8 +52,6 @@ s5 loadStatus "ifa3_camp_tiger_2_mis_s5";
 
 // Брифинг
 player createDiaryRecord ["Diary", [localize "STR_ifa3_tiger_4_mis_plan1", localize "STR_ifa3_tiger_4_mis_plan1_1"]];
-player createDiaryRecord ["Diary", [localize "STRD_ifa3lib_tank_peredacha_init", localize "STRD_ifa3lib_tank_peredacha"]];
-
 
 // Отключаем сохранение и провал если хоть 1 игрок умер в MP
 if (isMultiplayer) then {
@@ -66,12 +64,12 @@ enableSaving [false, false];
 } forEach allPlayers;
 };
 
+player setBehaviour "safe";
 
 sleep 0.5;
 
-// Скрипт коробки передач и запрет снятие униформы
-if (isMultiplayer) then {_nul=execVM "ifa3_camp_tiger\f\Peredacha.sqf"};
-_nul=execVM "ifa3_camp_tiger\f\nouniforminit.sqf";
+// запрет снятие униформы
+[]execVM "ifa3_camp_tiger\f\nouniforminit.sqf";
 
 2 fadesound 1;
 
@@ -83,41 +81,41 @@ sleep 1;
 /////////////////// МИССИЯ ///////////////////
 
 dialog_of = [] spawn {
-_say = [s1,"STR_ifa3_tiger_mis4_say1","STR_ifa3_tiger_mis4_say1",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[s1,"STR_ifa3_tiger_mis4_say1","STR_ifa3_tiger_mis4_say1",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
 sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say2","STR_ifa3_tiger_mis4_say2",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[of,"STR_ifa3_tiger_mis4_say2","STR_ifa3_tiger_mis4_say2",7] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 7;
+[s1,"STR_ifa3_tiger_mis4_say3","STR_ifa3_tiger_mis4_say3",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[of,"STR_ifa3_tiger_mis4_say4","STR_ifa3_tiger_mis4_say4",21] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 21;
+[s1,"STR_ifa3_tiger_mis4_say5","STR_ifa3_tiger_mis4_say5",12] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 12;
+[of,"STR_ifa3_tiger_mis4_say6","STR_ifa3_tiger_mis4_say6",9] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 9;
+[s1,"STR_ifa3_tiger_mis4_say7","STR_ifa3_tiger_mis4_say7",1] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 1;
+[of,"STR_ifa3_tiger_mis4_say8","STR_ifa3_tiger_mis4_say8",8] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 8;
+[s1,"STR_ifa3_tiger_mis4_say9","STR_ifa3_tiger_mis4_say9",1] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 1;
+[of,"STR_ifa3_tiger_mis4_say10","STR_ifa3_tiger_mis4_say10",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
 sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say3","STR_ifa3_tiger_mis4_say3",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say4","STR_ifa3_tiger_mis4_say4",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say5","STR_ifa3_tiger_mis4_say5",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say6","STR_ifa3_tiger_mis4_say6",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say7","STR_ifa3_tiger_mis4_say7",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say8","STR_ifa3_tiger_mis4_say8",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say9","STR_ifa3_tiger_mis4_say9",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say10","STR_ifa3_tiger_mis4_say10",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say11","STR_ifa3_tiger_mis4_say11",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say12","STR_ifa3_tiger_mis4_say12",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say13","STR_ifa3_tiger_mis4_say13",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say14","STR_ifa3_tiger_mis4_say14",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say15","STR_ifa3_tiger_mis4_say15",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [s1,"STR_ifa3_tiger_mis4_say16","STR_ifa3_tiger_mis4_say16",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-_say = [of,"STR_ifa3_tiger_mis4_say17","STR_ifa3_tiger_mis4_say17",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-if (isMultiplayer) then {s1 removeAction action_s1;};
+[s1,"STR_ifa3_tiger_mis4_say11","STR_ifa3_tiger_mis4_say11",9] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 9;
+[of,"STR_ifa3_tiger_mis4_say12","STR_ifa3_tiger_mis4_say12",8] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 8;
+[s1,"STR_ifa3_tiger_mis4_say13","STR_ifa3_tiger_mis4_say13",9] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 9;
+[of,"STR_ifa3_tiger_mis4_say14","STR_ifa3_tiger_mis4_say14",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s1,"STR_ifa3_tiger_mis4_say15","STR_ifa3_tiger_mis4_say15",10] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 10;
+[s1,"STR_ifa3_tiger_mis4_say16","STR_ifa3_tiger_mis4_say16",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 4;
+[of,"STR_ifa3_tiger_mis4_say17","STR_ifa3_tiger_mis4_say17",5] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 5;
+if (isMultiplayer) then {s1 removeAction action_s1};
 };
 
 sleep 3;
@@ -162,8 +160,10 @@ player setCurrentTask task1;
 sleep 5;
 if (!isMultiplayer) then {savegame};
 
-// Зачистили танк возле
+// Зачистили танк и возле него
 waitUntil {tank_zachistka and s1 distance tank1 <100};
+_nem = nearestObjects [gorod, ["LIB_UK_Soldier_base"], 600];
+{_x setdamage 1;} foreach _nem;
 setacctime 1;
 sleep 2;
 Task1 setTaskState "SUCCEEDED";
@@ -194,24 +194,28 @@ sleep 1;
 
 // болтовня
 setacctime 1;
-s3 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say1",false];
+[s1,"STR_ifa3_tiger_mis5_say1","STR_ifa3_tiger_mis5_say1",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+if (alive s2 and alive s4) then {
+[s2,"STR_ifa3_tiger_mis5_say2","STR_ifa3_tiger_mis5_say2",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s2,"STR_ifa3_tiger_mis5_say3","STR_ifa3_tiger_mis5_say3",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s4,"STR_ifa3_tiger_mis5_say4","STR_ifa3_tiger_mis5_say4",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[s2,"STR_ifa3_tiger_mis5_say5","STR_ifa3_tiger_mis5_say5",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
 sleep 3;
-s2 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say2",false];
-sleep 3;
-s2 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say3",false];
-sleep 3;
-s4 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say4",false];
-sleep 3;
-s2 kbTell [s4, "briefing", "STR_ifa3_tiger_mis5_say5",false];
-sleep 3;
-s1 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say6",false];
-sleep 3;
-s2 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say7",false];
-sleep 3;
-s4 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say8",false];
-sleep 3;
-s1 kbTell [s1, "briefing", "STR_ifa3_tiger_mis5_say9",false];
-sleep 3;
+};
+[s1,"STR_ifa3_tiger_mis5_say6","STR_ifa3_tiger_mis5_say6",17] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 17;
+[s2,"STR_ifa3_tiger_mis5_say7","STR_ifa3_tiger_mis5_say7",11] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 11;
+if (alive s4) then {
+[s4,"STR_ifa3_tiger_mis5_say8","STR_ifa3_tiger_mis5_say8",9] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 9;
+[s1,"STR_ifa3_tiger_mis5_say9","STR_ifa3_tiger_mis5_say9",8] execvm "ifa3_camp_tiger\f\say3d.sqf";
+};
+sleep 8;
 
 {[_x] joinsilent s1} foreach tank2_unit;
 
@@ -228,12 +232,13 @@ sleep 5;
 if (!isMultiplayer) then {savegame};
 
 // Время
+[] execVM "ataka.sqf"; // атака
 hint localize "STR_ifa3_tiger_4_mis_hint1";
 sleep 300;
 hint localize "STR_ifa3_tiger_4_mis_hint2";
 sleep 300;
 hint localize "STR_ifa3_tiger_4_mis_hint3";
-sleep 180;
+sleep 300;
 hint localize "STR_ifa3_tiger_4_mis_hint4";
 sleep 130;
 
@@ -256,11 +261,11 @@ _camera cameraEffect ["internal","back"];
 _camera camPrepareTarget [42478.49,92752.66,-14891.53];
 _camera camPreparePos [2485.99,2352.82,29.48];
 _camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
+_camera camCommitPrepared 0;
 _camera camPrepareTarget [42478.49,92752.66,-14891.53];
 _camera camPreparePos [2541.15,2477.58,30.51];
 _camera camPrepareFOV 0.700;
-_camera camCommitPrepared 15
+_camera camCommitPrepared 15;
 
 sleep 5;
 // Конец

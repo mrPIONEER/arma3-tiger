@@ -67,6 +67,10 @@ s2 loadStatus "ifa3_camp_tiger_1_mis_s2";
 s3 loadStatus "ifa3_camp_tiger_1_mis_s3";
 s4 loadStatus "ifa3_camp_tiger_1_mis_s4";
 s5 loadStatus "ifa3_camp_tiger_1_mis_s5";
+s2 moveInGunner tank3;
+s3 moveindriver tank3;
+s4 moveInTurret [tank3, [0, 1]];
+s5 moveInTurret [tank3, [1]];
 {_x setDamage 0} forEach player_box;
 };
 
@@ -99,7 +103,6 @@ tank3 setFuel 0;
 
 // Брифинг
 player createDiaryRecord ["Diary", [localize "STR_ifa3_tiger_2_mis_plan1", localize "STR_ifa3_tiger_2_mis_plan1_1"]];
-player createDiaryRecord ["Diary", [localize "STRD_ifa3lib_tank_peredacha_init", localize "STRD_ifa3lib_tank_peredacha"]];
 
 // 0 и 1 задание
 task0 = player createSimpleTask [localize "STR_ifa3_tiger_2_mis_task0"];
@@ -135,9 +138,8 @@ Task0 setTaskState "Failed";
 
 sleep 0.5;
 
-// Скрипт коробки передач и запрет снятие униформы
-if (isMultiplayer) then {_nul=execVM "ifa3_camp_tiger\f\Peredacha.sqf"};
-_nul=execVM "ifa3_camp_tiger\f\nouniforminit.sqf";
+// запрет снятие униформы
+[]execVM "ifa3_camp_tiger\f\nouniforminit.sqf";
 
 // Вейпоинты для двух групп пехоты
 _wp1_gr1 = gr1 addWaypoint [getmarkerpos "pehota_pos_1",0];
@@ -221,26 +223,22 @@ scena_tigr = [] spawn {
 // Начало разговора с солдатом
 solder playmove "AmovPercMstpSlowWrflDnon_Salute";
 s1 playmove "AmovPercMstpSlowWrflDnon_Salute";
-_say = [solder,"STR_ifa3_tiger_mis2_say1","STR_ifa3_tiger_mis2_say1",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-
-_say = [s1,"STR_ifa3_tiger_mis2_say2","STR_ifa3_tiger_mis2_say2",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-
-_say = [solder,"STR_ifa3_tiger_mis2_say3","STR_ifa3_tiger_mis2_say3",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-
-_say = [solder,"STR_ifa3_tiger_mis2_say4","STR_ifa3_tiger_mis2_say4",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-
-_say = [s1,"STR_ifa3_tiger_mis2_say5","STR_ifa3_tiger_mis2_say5",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-
-_say = [solder,"STR_ifa3_tiger_mis2_say6","STR_ifa3_tiger_mis2_say6",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
-
-_say = [s1,"STR_ifa3_tiger_mis2_say7","STR_ifa3_tiger_mis2_say7",3] execvm "ifa3_camp_tiger\f\say3d.sqf";
-sleep 3;
+[solder,"STR_ifa3_tiger_mis2_say1","STR_ifa3_tiger_mis2_say1",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 4;
+[s1,"STR_ifa3_tiger_mis2_say2","STR_ifa3_tiger_mis2_say2",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 2;
+[solder,"STR_ifa3_tiger_mis2_say3","STR_ifa3_tiger_mis2_say3",5] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 5;
+[s1,"STR_ifa3_tiger_mis2_say3_1","STR_ifa3_tiger_mis2_say3_1",1] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 1;
+[solder,"STR_ifa3_tiger_mis2_say4","STR_ifa3_tiger_mis2_say4",8] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 8;
+[s1,"STR_ifa3_tiger_mis2_say5","STR_ifa3_tiger_mis2_say5",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 4;
+[solder,"STR_ifa3_tiger_mis2_say6","STR_ifa3_tiger_mis2_say6",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 4;
+[s1,"STR_ifa3_tiger_mis2_say7","STR_ifa3_tiger_mis2_say7",6] execvm "ifa3_camp_tiger\f\say3d.sqf";
+sleep 6;
 [solder] joinSilent gr2;
 
 if (isMultiplayer) then {
@@ -283,27 +281,27 @@ tank3 setFuel 0;
 tank3 engineOn false;
 sleep 1;
 s3 kbTell [s1, "briefing", "STR_ifa3_tiger_mis2_say9",true];
-sleep 3;
+sleep 10;
 s1 kbTell [s3, "briefing", "STR_ifa3_tiger_mis2_say10",true];
 sleep 3;
 
 // Диалог по рации другим танкам
 s1 kbTell [t1_1, "briefing", "STR_ifa3_tiger_mis2_say11",true];
-sleep 3;
+sleep 2;
 t1_1 kbTell [s1, "briefing", "STR_ifa3_tiger_mis2_say12",true];
-sleep 3;
+sleep 4;
 s1 kbTell [t1_1, "briefing", "STR_ifa3_tiger_mis2_say13",true];
-sleep 3;
+sleep 4;
 t1_1 kbTell [s1, "briefing", "STR_ifa3_tiger_mis2_say14",true];
-sleep 3;
+sleep 2;
 s1 kbTell [t1_1, "briefing", "STR_ifa3_tiger_mis2_say15",true];
-sleep 3;
+sleep 8;
 t2_1 kbTell [s1, "briefing", "STR_ifa3_tiger_mis2_say16",true];
-sleep 3;
+sleep 2;
 s1 kbTell [t2_1, "briefing", "STR_ifa3_tiger_mis2_say17",true];
-sleep 3;
+sleep 4;
 t2_1 kbTell [s1, "briefing", "STR_ifa3_tiger_mis2_say18",true];
-sleep 3;
+sleep 1;
 s1 kbTell [s1, "briefing", "STR_ifa3_tiger_mis2_say19",true];
 sleep 3;
 
@@ -340,16 +338,16 @@ waitUntil {(s1 distance tank3 > 300) or (vehicle s1 distance tank3 > 300)};
 // Скрипт для колоны
 _kolona = [] spawn {
 kolona_brit_poshla=true;
-waitUntil {kolona_tank_1 distance pos_marker <100 or kolona_tank_2 distance pos_marker <100};
-_nul = [kolona_tank_1,"kolona_tank_1"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_2,"kolona_tank_2"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_3,"kolona_tank_3"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_4,"kolona_tank_4"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_5,"kolona_tank_5"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_6,"kolona_tank_6"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_7,"kolona_tank_7"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_8,"kolona_tank_8"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
-_nul = [kolona_tank_9,"kolona_tank_9"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+waitUntil {kolona_tank_1 distance pos_marker <300 or kolona_tank_2 distance pos_marker <300 or kolona_tank_3 distance pos_marker <300};
+[kolona_tank_1,"kolona_tank_1"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_2,"kolona_tank_2"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_3,"kolona_tank_3"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_4,"kolona_tank_4"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_5,"kolona_tank_5"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_6,"kolona_tank_6"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_7,"kolona_tank_7"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_8,"kolona_tank_8"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
+[kolona_tank_9,"kolona_tank_9"] execvm "ifa3_camp_tiger\f\gomarker.sqf";
 {_x setMarkerSize [1,1]} foreach ["kolona_tank_1","kolona_tank_2","kolona_tank_3","kolona_tank_4","kolona_tank_5","kolona_tank_6","kolona_tank_7","kolona_tank_8","kolona_tank_9"];
 
 Task2 setTaskState "SUCCEEDED";
@@ -364,9 +362,9 @@ player setCurrentTask task3;
 waitUntil {razvedka_kolona_know};
 deleteVehicle trig_srop1;
 stop1_trig=false;
-{_nul = [_x,"zona"] execVM "ifa3_camp_tiger\f\UPS.sqf"} foreach peh_brit_kolona_kom;
+{[_x,"zona"] execVM "ifa3_camp_tiger\f\UPS.sqf"} foreach peh_brit_kolona_kom;
 {_x domove position s1} foreach tanki_brit_kolona;
-{_nul = [_x,"zona"] execVM "ifa3_camp_tiger\f\UPS.sqf"} foreach [art1G,art2G,art3G,art4G];
+{[_x,"zona"] execVM "ifa3_camp_tiger\f\UPS.sqf"} foreach [art1G,art2G,art3G,art4G];
 };
 
 

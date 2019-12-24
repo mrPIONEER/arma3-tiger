@@ -34,6 +34,4 @@ comment "Set identity";
 _this setFace "LIB_WhiteHead_08_Dirt";
 _this setSpeaker "male04ger";
 
-
-
 if (true) exitWith {};

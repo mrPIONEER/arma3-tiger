@@ -19,7 +19,7 @@ if (!alive _obj) exitWith {};
 _timetext = (_time + 1);
 
 setacctime 1;
-_obj say _sound;
+playsound _sound;
 [localize _tema,0,0.92,_timetext,0,0,789] spawn BIS_fnc_dynamicText;
 _obj setRandomLip true;
 sleep _time;

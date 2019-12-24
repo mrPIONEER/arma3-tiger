@@ -1,11 +1,3 @@
-class Header
-{
-	gameType = COOP;
-	minPlayers = 1;
-	maxPlayers = 5;
-};
-
-Author = "$STR_avtor_ifa3_tiger";
 onLoadName = "$STR_ifa3_tiger_mis3";
 onLoadIntro = "$STR_ifa3_tiger_mis3";
 briefingName = "$STR_ifa3_tiger_mis3";
@@ -15,19 +7,28 @@ overviewText = "$STR_ifa3_tiger_mis3_text";
 loadScreen =  "\ifa3_camp_tiger\t\3.jpg";
 overviewPicture = "\ifa3_camp_tiger\t\3.jpg";
 
-respawn = 0; // респ отключен
-enableDebugConsole = 0; // консоль только в редакторе
-enableTeamSwitch = 0; // отключен выбор игрока после старта
-joinUnassigned = 0; // игроки сами выбирают слоты
-skipLobby  =  0;  // лобби включен
-disabledAI = 0; // боты не удалЯютсЯ в MP
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 5;
+};
 
-reviveMode = 1; // включаем оживление
-reviveUnconsciousStateMode = 0; // базовый тип
-reviveRequiredTrait = 0; // все могут лечить
-reviveRequiredItems = 0; // не нужна аптечка
+Author = "$STR_avtor_ifa3_tiger";
+
+respawn = 0; // СЂРµСЃРї РѕС‚РєР»СЋС‡РµРЅ
+enableDebugConsole = 0; // РєРѕРЅСЃРѕР»СЊ С‚РѕР»СЊРєРѕ РІ СЂРµРґР°РєС‚РѕСЂРµ
+enableTeamSwitch = 0; // РѕС‚РєР»СЋС‡РµРЅ РІС‹Р±РѕСЂ РёРіСЂРѕРєР° РїРѕСЃР»Рµ СЃС‚Р°СЂС‚Р°
+joinUnassigned = 0; // РёРіСЂРѕРєРё СЃР°РјРё РІС‹Р±РёСЂР°СЋС‚ СЃР»РѕС‚С‹
+skipLobby  =  0;  // Р»РѕР±Р±Рё РІРєР»СЋС‡РµРЅ
+disabledAI = 0; // Р±РѕС‚С‹ РЅРµ СѓРґР°Р»СЏСЋС‚СЃСЏ РІ MP
+
+reviveMode = 1; // РІРєР»СЋС‡Р°РµРј РѕР¶РёРІР»РµРЅРёРµ
+reviveUnconsciousStateMode = 0; // Р±Р°Р·РѕРІС‹Р№ С‚РёРї
+reviveRequiredTrait = 0; // РІСЃРµ РјРѕРіСѓС‚ Р»РµС‡РёС‚СЊ
+reviveRequiredItems = 0; // РЅРµ РЅСѓР¶РЅР° Р°РїС‚РµС‡РєР°
 reviveRequiredItemsFakConsumed  =  1 ; 
-reviveMedicSpeedMultiplier = 2; // множитель длЯ медика
-reviveDelay = 30; // времЯ оживлениЯ
-reviveForceRespawnDelay = 3; // времЯ выхода 
-reviveBleedOutDelay = 300; // времЯ чтобы раненный умер 
+reviveMedicSpeedMultiplier = 2; // РјРЅРѕР¶РёС‚РµР»СЊ РґР»СЏ РјРµРґРёРєР°
+reviveDelay = 15; // РІСЂРµРјСЏ РѕР¶РёРІР»РµРЅРёСЏ
+reviveForceRespawnDelay = 3; // РІСЂРµРјСЏ РІС‹С…РѕРґР° 
+reviveBleedOutDelay = 300; // РІСЂРµРјСЏ С‡С‚РѕР±С‹ СЂР°РЅРµРЅРЅС‹Р№ СѓРјРµСЂ 
