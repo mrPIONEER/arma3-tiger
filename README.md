@@ -19,15 +19,13 @@ SP\COOP-5 кампания посвященная битве за Виллер-�
 https://www.youtube.com/playlist?list=PL2Cl9Wa3LJi-fEnd-nUnnokwBkAvvBRXG
 
 ## Авторы
-Разработка [IMB]PIONEER
-Спасибо [IMB]Soviet за создание декораций к миссиям.
+* Разработка [IMB]PIONEER
+* Спасибо [IMB]Soviet за создание декораций к миссиям.
 
 **Донат:**
-http://www.donationalerts.ru/r/pioneer_chovban
-PayPal, MasterCard, Visa, YandexMoney, Qiwi, WebMoney
-
-YandexMoney: 41001765497246
-WebMoney: Z916441607318, R150442472557
+* http://www.donationalerts.ru/r/pioneer_chovban PayPal, MasterCard, Visa, YandexMoney, Qiwi, WebMoney
+* YandexMoney: 41001765497246
+* WebMoney: Z916441607318, R150442472557
 
 **Контакты:**
 * https://www.youtube.com/channel/UCW6SMbTQPV76lmGlEJt-qgg/
