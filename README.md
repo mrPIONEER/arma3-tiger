@@ -20,6 +20,7 @@ https://www.youtube.com/playlist?list=PL2Cl9Wa3LJi-fEnd-nUnnokwBkAvvBRXG
 
 ## Авторы
 Разработка [IMB]PIONEER
+---
 Спасибо [IMB]Soviet за создание декораций к миссиям.
 
 Донат:
