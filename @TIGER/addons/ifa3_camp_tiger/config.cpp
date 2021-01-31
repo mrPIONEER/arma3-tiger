@@ -13,6 +13,9 @@ class CfgPatches {
         };
     };
 };
+class CfgFunctions {
+	#include "fn\cfgFunctions.hpp"
+};
 class CfgMissions {
     class Campaigns {
         class ifa3_camp_tiger_vus {

@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3484.6472,47.142406,2461.5769};
-		dir[]={0.40279922,-0.85237157,0.33350152};
-		up[]={0.6565423,0.5229345,0.54359078};
-		aside[]={0.63774103,-2.8673094e-007,-0.77025491};
+		pos[]={4046.0784,60.376106,2407.7354};
+		dir[]={-0.87461472,-0.38373709,0.29638189};
+		up[]={-0.36344317,0.92343658,0.12315967};
+		aside[]={0.32095152,-1.901717e-007,0.94711488};
 	};
 };
 binarizationWanted=0;
@@ -3555,33 +3555,33 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4206.2539,53.077324,900.50018};
+				position[]={4206.2539,49.297489,900.50018};
 				angles[]={6.2519073,1.6248399,0.020052591};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=1297;
 			type="Land_WW2_Zeltbahn";
-			atlOffset=3.7798347;
 		};
 		class Item108
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4194.1494,53.379845,905.04047};
+				position[]={4194.1494,49.172802,905.04047};
 				angles[]={6.2454987,1.6248317,0.029673969};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="art_pravo";
 			};
 			id=1298;
 			type="Land_WW2_Zeltbahn";
-			atlOffset=4.2070427;
 		};
 		class Item109
 		{

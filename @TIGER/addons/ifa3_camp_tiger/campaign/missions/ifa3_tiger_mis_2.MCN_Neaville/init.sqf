@@ -138,8 +138,6 @@ Task0 setTaskState "Failed";
 
 sleep 0.5;
 
-// запрет снятие униформы
-[]execVM "ifa3_camp_tiger\f\nouniforminit.sqf";
 
 // Вейпоинты для двух групп пехоты
 _wp1_gr1 = gr1 addWaypoint [getmarkerpos "pehota_pos_1",0];
@@ -223,21 +221,21 @@ scena_tigr = [] spawn {
 // Начало разговора с солдатом
 solder playmove "AmovPercMstpSlowWrflDnon_Salute";
 s1 playmove "AmovPercMstpSlowWrflDnon_Salute";
-[solder,"STR_ifa3_tiger_mis2_say1","STR_ifa3_tiger_mis2_say1",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[solder,"STR_ifa3_tiger_mis2_say1","STR_ifa3_tiger_mis2_say1",false,true] spawn PL_fnc_Say;
 sleep 4;
-[s1,"STR_ifa3_tiger_mis2_say2","STR_ifa3_tiger_mis2_say2",2] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[s1,"STR_ifa3_tiger_mis2_say2","STR_ifa3_tiger_mis2_say2",false,true] spawn PL_fnc_Say;
 sleep 2;
-[solder,"STR_ifa3_tiger_mis2_say3","STR_ifa3_tiger_mis2_say3",5] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[solder,"STR_ifa3_tiger_mis2_say3","STR_ifa3_tiger_mis2_say3",false,true] spawn PL_fnc_Say;
 sleep 5;
-[s1,"STR_ifa3_tiger_mis2_say3_1","STR_ifa3_tiger_mis2_say3_1",1] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[s1,"STR_ifa3_tiger_mis2_say3_1","STR_ifa3_tiger_mis2_say3_1",false,true] spawn PL_fnc_Say;
 sleep 1;
-[solder,"STR_ifa3_tiger_mis2_say4","STR_ifa3_tiger_mis2_say4",8] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[solder,"STR_ifa3_tiger_mis2_say4","STR_ifa3_tiger_mis2_say4",false,true] spawn PL_fnc_Say;
 sleep 8;
-[s1,"STR_ifa3_tiger_mis2_say5","STR_ifa3_tiger_mis2_say5",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[s1,"STR_ifa3_tiger_mis2_say5","STR_ifa3_tiger_mis2_say5",false,true] spawn PL_fnc_Say;
 sleep 4;
-[solder,"STR_ifa3_tiger_mis2_say6","STR_ifa3_tiger_mis2_say6",4] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[solder,"STR_ifa3_tiger_mis2_say6","STR_ifa3_tiger_mis2_say6",false,true] spawn PL_fnc_Say;
 sleep 4;
-[s1,"STR_ifa3_tiger_mis2_say7","STR_ifa3_tiger_mis2_say7",6] execvm "ifa3_camp_tiger\f\say3d.sqf";
+[s1,"STR_ifa3_tiger_mis2_say7","STR_ifa3_tiger_mis2_say7",false,true] spawn PL_fnc_Say;
 sleep 6;
 [solder] joinSilent gr2;
 

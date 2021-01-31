@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={197.0468,141.52654,-306.40668};
-		dir[]={-0.781883,-0.42303178,-0.45794117};
-		up[]={-0.36503276,0.90611392,-0.21379621};
-		aside[]={-0.50538915,-7.0380338e-008,0.86289531};
+		pos[]={2481.7759,73.023651,2517.5225};
+		dir[]={-0.07958854,-0.5484668,0.83237672};
+		up[]={-0.05220414,0.83617216,0.54597676};
+		aside[]={0.99546039,-5.7589205e-009,0.095181949};
 	};
 };
 binarizationWanted=0;
@@ -1607,7 +1607,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2468.2485,40.872559,2530.281};
-			angle=6.2620659;
+			angle=6.2620654;
 			class Attributes
 			{
 				condition="call{count thislist < 4}";
@@ -17333,7 +17333,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3143.595,48.978985,2994.2175};
-			angle=0.21131228;
+			angle=0.21131226;
 			class Attributes
 			{
 				text="запрет север";
@@ -17354,7 +17354,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4326.0562,50.805897,1435.9053};
-			angle=1.7860342;
+			angle=1.7860341;
 			class Attributes
 			{
 				text="запрет восток";
@@ -17375,7 +17375,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={2566.7832,52.707855,528.67462};
-			angle=0.21131228;
+			angle=0.21131226;
 			class Attributes
 			{
 				text="запрет юг";
@@ -17396,7 +17396,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={1401.567,55.41209,2087.1626};
-			angle=1.7860342;
+			angle=1.7860341;
 			class Attributes
 			{
 				text="запрет запад";
